@@ -1,0 +1,313 @@
+{
+  "meta": {
+    "locale": "en-US",
+    "htmlLang": "en",
+    "siteName": "prevereniefirmy.sk",
+    "siteTitle": "Company Audit | LegisPro, s.r.o.",
+    "description": "Company cash-flow audit, compliance, process optimization and corporate changes supervised by LegisPro law firm."
+  },
+  "nav": {
+    "subtitle": "law firm",
+    "contactCta": "Book a meeting",
+    "items": {
+      "audit": "Company audit",
+      "formation": "Company formation & changes",
+      "liquidation": "Liquidation",
+      "mergers": "Mergers & transformations",
+      "contact": "About & contact"
+    }
+  },
+  "cta": {
+    "primary": "Book a meeting"
+  },
+  "footer": {
+    "tagline": "Company audit, compliance and process optimization supervised by a law firm.",
+    "columnsNav": "Sections",
+    "columnsContact": "Contact",
+    "rights": "All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "cookies": "Cookies",
+    "cta": "Book a meeting",
+    "officeHoursLabel": "Office hours"
+  },
+  "audit": {
+    "seoTitle": "Company audit",
+    "seoDescription": "Review of company cash flows, risk identification - compliance and process setup - optimization.",
+    "heroTitle": "Company audit",
+    "heroDescription": "Review of company cash flows, risk identification - compliance and process setup - optimization.",
+    "heroCards": {
+      "flows": "Cash-flow review",
+      "compliance": "Risk identification - compliance",
+      "optimization": "Process setup - optimization"
+    },
+    "flows": {
+      "badge": "Cash-flow review",
+      "heading": "We review your company's cash flows and identify risks.",
+      "statsLabel": "According to statistics",
+      "stats": [
+        "70% of companies have related parties",
+        "90% of asset stripping goes through invoicing"
+      ],
+      "audienceLabel": "Our analysis is intended for",
+      "audience": [
+        "Owners",
+        "Partners",
+        "Investors",
+        "Insolvency proceedings",
+        "Liquidations",
+        "Probate proceedings",
+        "Divorces"
+      ],
+      "reasonsLabel": "Why work with us",
+      "accountantIntro": "Your accountant ONLY records the documents they receive. They do not assess their legitimacy in any way.",
+      "auditorIntro": "Your auditor verifies whether:",
+      "auditorChecks": [
+        "your accountant followed accounting procedures when recording documents",
+        "your financial statements give a true and fair view",
+        "in other words, whether your numbers match the documents and are recorded according to the law"
+      ],
+      "doesNotMeanIntro": "... but this does not mean that:",
+      "doesNotMean": [
+        "the company has not been defrauded",
+        "supplier prices are not inflated",
+        "a supplier is not toxically linked to a related party",
+        "no VAT scheme exists"
+      ],
+      "auditorDoesNotIntro": "On the other hand, an auditor:",
+      "auditorDoesNot": [
+        "does not identify culprits",
+        "does not represent you as a client",
+        "does not apply legal remedies to protect you"
+      ],
+      "lossesLabel": "Companies lose part of their revenue due to",
+      "losses": [
+        "Fictitious invoices",
+        "Disadvantageous contracts with suppliers related to their own employee",
+        "VAT schemes",
+        "Asset stripping",
+        "Disputes between partners"
+      ],
+      "stepsLabel": "We uncover reality – separate the healthy from the toxic – prepare an overview",
+      "steps": [
+        "We create a cash-flow map (where, who, how much, from when)",
+        "We map supplier chains",
+        "We identify persons in conflict of interest with you",
+        "We build a damages model",
+        "We quantify the damage",
+        "We identify toxic entities",
+        "We submit the evidence",
+        "We apply legal remedies"
+      ],
+      "disciplinesLabel": "Our work combines",
+      "disciplines": [
+        "Financial analysis",
+        "Accounting",
+        "Due diligence",
+        "Compliance",
+        "Legal analysis",
+        "Application of legal remedies"
+      ],
+      "outcomesLabel": "So that",
+      "outcomes": [
+        "You will have a clear overview",
+        "You will stop wasting resources",
+        "You will recover financial resources"
+      ],
+      "summary1": "Reviewing cash flows is not just about numbers in a spreadsheet. It is a deep scan of your company's health. We identify where money is leaking and whether your transactions are aligned with your interests and strategy.",
+      "summary2": "Whether you are planning an acquisition or cleaning up your own business, a detailed cash-flow audit gives you peace of mind. We review transaction history, uncover non-standard operations and hold a mirror up to your financial condition. With us, you will know exactly where the money is coming from and where it is actually going.",
+      "packagesLabel": "Available packages",
+      "packages": [
+        {
+          "name": "GREEN FLAG SCAN package",
+          "description": "a quick financial overview of the company",
+          "items": [
+            "12-month accounting analysis",
+            "analysis of the TOP 20 suppliers and customers",
+            "cash-flow map",
+            "related-party check",
+            "risk identification",
+            "estimate of damage incurred"
+          ]
+        },
+        {
+          "name": "ORANGE FLAG SCAN package",
+          "description": "on top of the GREEN FLAG SCAN package",
+          "items": [
+            "legal qualification",
+            "proposal of remedies for your legal protection"
+          ]
+        },
+        {
+          "name": "RED FLAG SCAN package",
+          "description": "on top of the ORANGE FLAG SCAN package",
+          "items": [
+            "application of legal remedies in court",
+            "representation in court proceedings"
+          ]
+        }
+      ]
+    },
+    "compliance": {
+      "heading": "Risk identification - compliance",
+      "intro": "Risk identification is one of the core pillars of successful company management. The goal is to spot and record early all factors that could lead to breaches of regulations, internal rules or misalignment with applicable legal norms.",
+      "areasLabel": "Key areas to monitor",
+      "areas": [
+        "Regulatory risks: Changes in legislation (e.g. AML, GDPR, consumer protection) and the threat of sanctions from supervisory authorities.",
+        "Operational risks: Gaps in internal processes that may lead to unintentional breaches of regulations.",
+        "Reputational risks: Potential damage to the company's good name due to unethical conduct or corruption.",
+        "Contractual risks: Risks arising from contractual obligations."
+      ],
+      "whistleblowingTipLabel": "Tip: Are you aware of the obligation to implement a whistleblower protection system?",
+      "whistleblowingTip": "Whistleblowing is not about \"snitching\" — it is one of the most effective forms of internal company control that allows you to uncover fraud, corruption or other misconduct before they cause irreparable harm.",
+      "dutiesLabel": "Your statutory obligations",
+      "dutiesIntro": "If you employ 50 or more people (or operate in specific sectors such as financial services), the law imposes the following obligations:",
+      "duties": [
+        "Obligation to set up an internal reporting system: You must have a secure channel for submitting reports (online form, hotline, mail).",
+        "Obligation to appoint a responsible person: The company must appoint a person (internal or external) who receives and independently reviews reports.",
+        "Obligation to meet deadlines: You must confirm receipt of a report within 7 days and resolve it within 90 days.",
+        "Ban on retaliation: Absolute protection of the whistleblower from dismissal or workplace harassment."
+      ],
+      "outro": "Feel free to contact us for more information on this topic."
+    },
+    "optimization": {
+      "heading": "Process setup - optimization",
+      "subheading": "Process optimization = From chaos to efficiency",
+      "intro": "Do you feel that your company is growing but profits are stagnating? Often, the cause is \"invisible thieves\" – inefficient processes, duplicated tasks and poor information handoff. Our optimization is not about theory but about removing the barriers that slow your business down.",
+      "whatLabel": "What exactly we will do for you",
+      "cards": [
+        {
+          "title": "Process audit",
+          "items": [
+            "We map the current state",
+            "We identify processes and activities that add no value"
+          ]
+        },
+        {
+          "title": "Flow redesign",
+          "items": [
+            "We design leaner and more logical workflows that speed up internal processes"
+          ]
+        },
+        {
+          "title": "Error elimination",
+          "text": "We set up control mechanisms so that the human factor and the need for constant rework are minimized."
+        }
+      ],
+      "resultsLabel": "Measurable results for your company",
+      "results": [
+        "Lower operating costs: Fewer unnecessary steps mean lower staff and overhead costs.",
+        "Higher substitutability: Clearly defined processes mean one person leaving will not jeopardize an entire department.",
+        "Happier employees: Clear responsibilities reduce stress and frustration caused by disorder."
+      ],
+      "outro": "Feel free to contact us for more information on this topic."
+    }
+  },
+  "formation": {
+    "seoTitle": "Company formation and changes",
+    "seoDescription": "Comprehensive company formation and changes from the initial concept through incorporation to subsequent corporate changes.",
+    "heroTitle": "Company formation and changes",
+    "heroDescription": "From an idea to a functioning company. We deliver a legally, tax and process-ready entity that is ready to grow with you.",
+    "foundingLabel": "Company formation",
+    "foundingHeading": "Complete company setup from day one",
+    "foundingIntro": "We prepare not only the founding documents but also the overall architecture of the company — from the ownership structure and corporate purpose to related contracts.",
+    "foundingItemsLabel": "What our service includes",
+    "foundingItems": [
+      "Analysis of the business plan and recommendation of a suitable legal form",
+      "Drafting of founding documents (articles of association, statutes, deed of incorporation)",
+      "Arrangement of owner consents for the registered seat and notification duties",
+      "Registration in the Commercial Register and with tax authorities",
+      "Preparation of statutory and governance documents (rules of procedure, organizational chart)",
+      "Consultation on the accounting and tax strategy at the start of the business"
+    ],
+    "changesLabel": "Corporate changes",
+    "changesHeading": "Changes that do not slow your business down",
+    "changesIntro": "When a change happens in the company, speed and accuracy are key. We prepare all necessary documents, arrange notarial acts and handle registration with the Commercial Register.",
+    "changesItems": [
+      "Change of business name, registered seat or business activities",
+      "Transfer of ownership interests and change of partners",
+      "Changes in statutory bodies and in the way the company is represented",
+      "Increase or decrease of registered capital",
+      "Setup of control mechanisms and partner rights",
+      "Update of internal policies and contractual documentation"
+    ]
+  },
+  "liquidation": {
+    "seoTitle": "Liquidation of companies and non-profit organizations",
+    "seoDescription": "Controlled liquidation of companies and non-profit organizations. We prepare you for terminating the entity without unnecessary risk.",
+    "heroTitle": "Liquidation of companies and non-profits",
+    "heroDescription": "Terminate the entity in a controlled way. We prepare the entire liquidation process and set the conditions so that you have peace of mind both legally and from a tax perspective.",
+    "processLabel": "Liquidation process",
+    "processHeading": "From the decision to dissolve to removal from the register",
+    "processIntro": "Liquidating a company or non-profit is a process with multiple milestones that affect the liability of directors and partners. We prepare and document every step.",
+    "processItems": [
+      "Analysis of the entity's assets and liabilities",
+      "Partners' resolution to dissolve and enter liquidation",
+      "Appointment of the liquidator and notification to the Commercial Register",
+      "Notices to creditors and the tax office, publications in the Commercial Gazette",
+      "Settlement of receivables and liabilities, sale of assets and termination of contracts",
+      "Preparation of interim and final financial statements including the tax return",
+      "Approval of the liquidator's final report and distribution of the liquidation balance",
+      "Application for removal from the Commercial Register and tax office records"
+    ],
+    "assistanceLabel": "How we help you",
+    "assistanceItems": [
+      "Full management of the liquidation from decision to removal",
+      "Representation before public authorities and creditors",
+      "Tax and accounting advisory throughout the liquidation",
+      "Protection of directors from personal liability and proper documentation"
+    ]
+  },
+  "mergers": {
+    "seoTitle": "Mergers and transformations of companies",
+    "seoDescription": "Mergers and transformations of companies in line with Slovak and European legislation – from strategic planning to registration.",
+    "heroTitle": "Mergers and transformations of companies",
+    "heroDescription": "Strategic decisions require clean legal and tax execution. We prepare mergers, spin-offs and changes of legal form end-to-end.",
+    "whyLabel": "When to consider a transformation or merger",
+    "whyItems": [
+      "Consolidation of multiple companies within one group",
+      "Separating risky or unprofitable activities into a standalone entity",
+      "Acquisition or sale of part of the business",
+      "Change of legal form (e.g. from LLC to joint-stock company)",
+      "Cross-border mergers within the EU"
+    ],
+    "processLabel": "What the cooperation looks like",
+    "processHeading": "We prepare the transaction end-to-end and in one logic",
+    "processItems": [
+      "Analysis of the starting structure and goal of the transaction",
+      "Proposal of the transformation or merger including tax and accounting impacts",
+      "Due diligence of the companies involved",
+      "Preparation of transformation or merger projects and all related documents",
+      "Securing consents and approvals (general meetings, supervisory bodies)",
+      "Coordination with auditors, notaries and registration courts",
+      "Registration of the transformation or merger in the Commercial Register and subsequent integration"
+    ]
+  },
+  "contact": {
+    "seoTitle": "About & contact",
+    "seoDescription": "LegisPro, s.r.o. connects finance, compliance and law into practical solutions. Get in touch and let's plan an initial consultation.",
+    "heroTitle": "About & contact",
+    "heroDescription": "LegisPro, s.r.o. is a law firm focused on connecting law, finance and processes. We help owners, directors and investors make informed decisions.",
+    "missionLabel": "Our mission",
+    "missionText": "We help clients see their company as a whole. We combine legal, tax and process expertise into a single output that is understandable and actionable.",
+    "valuesLabel": "How we approach cooperation",
+    "values": [
+      "Discretion and clear communication throughout the cooperation",
+      "A blend of legal, economic and process perspectives",
+      "Focus on practical usability of outputs and their defensibility",
+      "Long-term care for clients, not one-off projects"
+    ],
+    "contactLabel": "Contact",
+    "formTitle": "Book a meeting",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "topic": "What do you need",
+      "message": "Message",
+      "submit": "Send",
+      "submitting": "Sending...",
+      "success": "Thank you, we will get back to you as soon as possible.",
+      "error": "The form could not be sent. Please try again."
+    }
+  }
+}

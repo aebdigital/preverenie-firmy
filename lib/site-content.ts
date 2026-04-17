@@ -15,13 +15,14 @@ export type HomeService = {
 };
 
 export const navigation: NavItem[] = [
-  { href: "/", label: "Úvod" },
   { href: "/preverenie-firmy", label: "Preverenie firmy" },
   { href: "/zakladanie-a-zmeny", label: "Zakladanie a zmeny" },
   { href: "/likvidacia", label: "Likvidácia" },
   { href: "/premeny-a-zlucenia", label: "Premeny a zlúčenia" },
   { href: "/o-nas-a-kontakt", label: "O nás a kontakt" }
 ];
+
+export type { NavItem as _NavItem };
 
 export const contactDetails = {
   company: "LegisPro, s.r.o.",

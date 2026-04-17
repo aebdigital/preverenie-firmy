@@ -6,6 +6,13 @@ export default function manifest(): MetadataRoute.Manifest {
     short_name: "Preverenie firmy",
     description:
       "Preverenie firmy, compliance, optimalizácia procesov a korporátne zmeny pod vedením LegisPro, s.r.o.",
+    icons: [
+      {
+        src: "/favicon.png",
+        sizes: "700x700",
+        type: "image/png"
+      }
+    ],
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

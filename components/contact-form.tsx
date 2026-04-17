@@ -2,17 +2,31 @@
 
 import { FormEvent, useState } from "react";
 
-const serviceOptions = [
-  "Preverenie tokov firmy",
-  "Identifikácia rizík - compliance",
-  "Nastavenie procesov - optimalizácia",
-  "Zakladanie obchodných spoločností a zmeny",
-  "Likvidácia obchodných spoločností a neziskoviek",
-  "Premeny a zlúčenia obchodných spoločností",
-  "Iné"
-];
+type FormLabels = {
+  name: string;
+  email: string;
+  phone: string;
+  topic: string;
+  message: string;
+  submit: string;
+  submitting: string;
+  success: string;
+  error: string;
+};
 
-export function ContactForm() {
+const defaultLabels: FormLabels = {
+  name: "Meno a priezvisko",
+  email: "E-mail",
+  phone: "Telefón",
+  topic: "Vaša správa",
+  message: "Vaša správa",
+  submit: "Odoslať",
+  submitting: "Odosielame...",
+  success: "Správa bola úspešne odoslaná. Ozveme sa vám čo najskôr.",
+  error: "Nepodarilo sa odoslať formulár. Skúste to prosím znova."
+};
+
+export function ContactForm({ labels = defaultLabels }: { labels?: FormLabels }) {
   const [feedback, setFeedback] = useState<string | null>(null);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
@@ -34,7 +48,7 @@ export function ContactForm() {
     };
 
     setStatus("loading");
-    setFeedback("Odosielame vašu správu.");
+    setFeedback(labels.submitting);
 
     try {
       const response = await fetch("/api/contact", {
@@ -51,24 +65,16 @@ export function ContactForm() {
 
       if (!response.ok || !result?.ok) {
         setStatus("error");
-        setFeedback(
-          result?.message ??
-            "Formulár sa nepodarilo odoslať. Skúste to prosím znova alebo nám napíšte priamo na office@legispro.sk."
-        );
+        setFeedback(result?.message ?? labels.error);
         return;
       }
 
       event.currentTarget.reset();
       setStatus("success");
-      setFeedback(
-        result.message ??
-          "Správa bola úspešne odoslaná. Ozveme sa vám čo najskôr."
-      );
+      setFeedback(result.message ?? labels.success);
     } catch {
       setStatus("error");
-      setFeedback(
-        "Nastala chyba pri odosielaní formulára. Skúste to prosím znova alebo nám napíšte priamo na office@legispro.sk."
-      );
+      setFeedback(labels.error);
     }
   };
 
@@ -85,67 +91,45 @@ export function ContactForm() {
 
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="space-y-2 text-sm font-medium text-black">
-          <span>Meno a priezvisko</span>
+          <span>{labels.name}</span>
           <input
             required
             name="name"
             type="text"
             autoComplete="name"
             className="h-12 w-full rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none transition focus:border-black"
-            placeholder="Vaše meno"
           />
         </label>
         <label className="space-y-2 text-sm font-medium text-black">
-          <span>E-mail</span>
+          <span>{labels.email}</span>
           <input
             required
             name="email"
             type="email"
             autoComplete="email"
             className="h-12 w-full rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none transition focus:border-black"
-            placeholder="vas@email.sk"
           />
-        </label>
-      </div>
-
-      <div className="grid gap-4 sm:grid-cols-2">
-        <label className="space-y-2 text-sm font-medium text-black">
-          <span>Telefón</span>
-          <input
-            name="phone"
-            type="tel"
-            autoComplete="tel"
-            className="h-12 w-full rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none transition focus:border-black"
-            placeholder="+421..."
-          />
-        </label>
-        <label className="space-y-2 text-sm font-medium text-black">
-          <span>Služba</span>
-          <select
-            name="service"
-            className="h-12 w-full rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none transition focus:border-black"
-            defaultValue=""
-          >
-            <option value="" disabled>
-              Vyberte oblasť
-            </option>
-            {serviceOptions.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
         </label>
       </div>
 
       <label className="space-y-2 text-sm font-medium text-black">
-        <span>Vaša správa</span>
+        <span>{labels.phone}</span>
+        <input
+          name="phone"
+          type="tel"
+          autoComplete="tel"
+          className="h-12 w-full rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none transition focus:border-black"
+          placeholder="+421..."
+        />
+      </label>
+
+      <label className="space-y-2 text-sm font-medium text-black">
+        <span>{labels.message}</span>
         <textarea
           required
           name="message"
           rows={6}
           className="w-full rounded-[1.5rem] border border-black/10 bg-white px-4 py-3 text-sm outline-none transition focus:border-black"
-          placeholder="Stručne opíšte, s čím potrebujete pomôcť."
         />
       </label>
 
@@ -155,7 +139,7 @@ export function ContactForm() {
           disabled={status === "loading"}
           className="inline-flex h-12 items-center justify-center rounded-full bg-black px-6 text-sm font-semibold text-white transition hover:bg-black/90 disabled:cursor-not-allowed disabled:bg-black/60"
         >
-          {status === "loading" ? "Odosielame..." : "Odoslať"}
+          {status === "loading" ? labels.submitting : labels.submit}
         </button>
       </div>
 

@@ -52,8 +52,8 @@ export function FeatureList({
 }
 
 export function CtaRow({
-  primaryHref = "/o-nas-a-kontakt#formular",
-  primaryLabel = "Dohodnite si stretnutie / Vyžiadajte cenovú ponuku",
+  primaryHref = "#",
+  primaryLabel = "Dohodnúť stretnutie",
   secondaryHref,
   secondaryLabel
 }: {

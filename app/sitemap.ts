@@ -1,45 +1,22 @@
 import type { MetadataRoute } from "next";
+import { i18n } from "@/i18n-config";
+import { getLocalizedPath, pathnames } from "@/pathnames";
 import { siteUrl } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
+  const entries: MetadataRoute.Sitemap = [];
 
-  return [
-    {
-      url: `${siteUrl}/`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 1
-    },
-    {
-      url: `${siteUrl}/preverenie-firmy`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.95
-    },
-    {
-      url: `${siteUrl}/zakladanie-a-zmeny`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85
-    },
-    {
-      url: `${siteUrl}/likvidacia`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85
-    },
-    {
-      url: `${siteUrl}/premeny-a-zlucenia`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85
-    },
-    {
-      url: `${siteUrl}/o-nas-a-kontakt`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9
+  for (const internal of Object.keys(pathnames)) {
+    for (const locale of i18n.locales) {
+      entries.push({
+        url: `${siteUrl}${getLocalizedPath(internal, locale)}`,
+        lastModified: now,
+        changeFrequency: internal === "/preverenie-firmy" ? "weekly" : "monthly",
+        priority: internal === "/preverenie-firmy" ? 1 : 0.8
+      });
     }
-  ];
+  }
+
+  return entries;
 }

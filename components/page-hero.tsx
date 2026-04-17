@@ -1,9 +1,7 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
-import { SectionBadge } from "@/components/site-primitives";
 
 export function PageHero({
-  badge,
   title,
   description,
   imageSrc,
@@ -11,7 +9,7 @@ export function PageHero({
   titleClassName,
   children
 }: {
-  badge: string;
+  badge?: string;
   title: string;
   description: string;
   imageSrc: string;
@@ -24,7 +22,6 @@ export function PageHero({
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-black/10 to-transparent" />
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-8 lg:py-20">
         <div className="space-y-6">
-          <SectionBadge>{badge}</SectionBadge>
           <div className="space-y-4">
             <h1
               className={`font-display text-5xl leading-[0.98] text-balance text-black sm:text-6xl ${
