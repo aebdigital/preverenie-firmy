@@ -149,20 +149,13 @@ export function ContactForm() {
         />
       </label>
 
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <p className="max-w-md text-sm leading-6 text-black/60">
-          Správa sa odosiela priamo na{" "}
-          <a className="font-semibold text-black" href="mailto:office@legispro.sk">
-            office@legispro.sk
-          </a>
-          {" "}cez SMTP2GO.
-        </p>
+      <div className="flex justify-start">
         <button
           type="submit"
           disabled={status === "loading"}
           className="inline-flex h-12 items-center justify-center rounded-full bg-black px-6 text-sm font-semibold text-white transition hover:bg-black/90 disabled:cursor-not-allowed disabled:bg-black/60"
         >
-          {status === "loading" ? "Odosielame..." : "Dohodnite si stretnutie"}
+          {status === "loading" ? "Odosielame..." : "Odoslať"}
         </button>
       </div>
 

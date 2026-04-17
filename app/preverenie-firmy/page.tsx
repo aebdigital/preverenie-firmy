@@ -1,57 +1,76 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import {
-  BadgeCheck,
-  Landmark,
-  ShieldCheck,
-  SlidersHorizontal,
-  Sparkles,
-  TriangleAlert,
-  Workflow
-} from "lucide-react";
 import { PageHero } from "@/components/page-hero";
-import { SiteShell } from "@/components/site-shell";
 import {
   CtaRow,
   FeatureList,
   SectionBadge
 } from "@/components/site-primitives";
+import { SiteShell } from "@/components/site-shell";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Preverenie firmy",
   description:
-    "Preverenie finančných tokov firmy, identifikácia rizík, compliance a optimalizácia procesov pod jednou službou.",
+    "Preverenie tokov firmy, identifikácia rizík - compliance a nastavenie procesov - optimalizácia.",
   path: "/preverenie-firmy",
   image: "/images/tax-law.jpg"
 });
 
+const audiences = [
+  "Pre majiteľov",
+  "Pre spoločníkov",
+  "Pre investorov",
+  "Konkurzné konania",
+  "Likvidácie",
+  "Dedičské konania",
+  "Rozvody"
+];
+
+const auditorChecks = [
+  "Váš účtovník postupoval pri zaúčtovaní dokladov v súlade s postupmi účtovania",
+  "Vaša účtovná závierka podáva pravdivý a verný obraz",
+  "Inak povedané, či Vaše čísla sedia s dokladmi a či sú zaúčtované podľa zákona"
+];
+
+const doesNotMean = [
+  "firma nebola okradnutá",
+  "dodávateľské ceny nie sú nafúknuté",
+  "dodávateľ nie je toxicky prepojený s Vami spriaznenou osobou",
+  "DPH schéma neexistuje"
+];
+
+const auditorDoesNot = [
+  "Nevyhľadáva vinníkov",
+  "Nezastupuje Vás ako klienta",
+  "Neaplikuje právne prostriedky, aby Vás ochránil"
+];
+
 const losses = [
-  "Fiktívne faktúry",
-  "Nevýhodné zmluvy s dodávateľmi prepojenými na vlastných zamestnancov",
-  "DPH schémy",
-  "Tunelovanie",
-  "Spory medzi spoločníkmi"
+  "Fiktívnym faktúram",
+  "Nevýhodným zmluvám s dodávateľmi, ktorí sú spriaznení s ich vlastným zamestnancom",
+  "DPH schémam",
+  "Tunelovaniu",
+  "Sporom medzi spoločníkmi"
 ];
 
 const flowSteps = [
-  "Vypracujeme mapu finančných tokov: kam, kto, koľko a od kedy.",
-  "Vypracujeme mapu reťazcov.",
-  "Identifikujeme osoby, ktoré sú s Vami v konflikte záujmov.",
-  "Vypracujeme model škody.",
-  "Určíme výšku škody.",
-  "Identifikujeme toxické subjekty.",
-  "Predložíme dôkazy.",
-  "Uplatníme právne prostriedky ochrany."
+  "Vypracujeme mapu finančných tokov (kam, kto, koľko, od kedy)",
+  "Vypracujeme mapu reťazcov",
+  "Identifikujeme osoby, ktoré sú s Vami v konflikte záujmov",
+  "Vypracujeme model škody",
+  "Určíme výšku škody",
+  "Identifikujeme toxické subjekty",
+  "Predložíme dôkazy",
+  "Uplatníme právne prostriedky ochrany"
 ];
 
 const flowDisciplines = [
-  "Finančná analýza",
-  "Účtovníctvo",
+  "Finančnej analýzy",
+  "Účtovníctva",
   "Due diligence",
   "Compliance",
-  "Právna analýza",
-  "Uplatnenie prostriedkov právnej ochrany"
+  "Právnej analýzy",
+  "Uplatnenia prostriedkov právnej ochrany"
 ];
 
 const flowOutcomes = [
@@ -62,91 +81,87 @@ const flowOutcomes = [
 
 const packages = [
   {
-    name: "GREEN FLAG SCAN",
-    tone: "Rýchly finančný prehľad firmy",
-    description: "Prvá vrstva orientácie v tokoch, vzťahoch a rizikách.",
-    accentClass: "border-emerald-500",
-    badgeClass: "bg-emerald-50 text-emerald-800",
+    name: "Balík GREEN FLAG SCAN",
+    description: "rýchly finančný prehľad firmy",
     items: [
-      "Analýza účtovníctva za 12 mesiacov",
-      "Analýza TOP 20 dodávateľov a odberateľov",
-      "Mapa toku peňazí",
-      "Kontrola spriaznených osôb",
-      "Identifikácia rizík",
-      "Odhad spôsobenej škody"
+      "analýzu účtovníctva za 12 mesiacov",
+      "analýzu TOP 20 dodávateľov a odberateľov",
+      "mapu toku peňazí",
+      "kontrolu spriaznených osôb",
+      "identifikáciu rizík",
+      "odhad spôsobenej škody"
     ]
   },
   {
-    name: "ORANGE FLAG SCAN",
-    tone: "Rozšírenie o právnu kvalifikáciu",
-    description: "Dopĺňa základný scan o právny rámec a návrh ochrany.",
-    accentClass: "border-orange-500",
-    badgeClass: "bg-orange-50 text-orange-800",
+    name: "Balík ORANGE FLAG SCAN",
+    description: "naviac oproti balíku GREEN FLAG SCAN",
     items: [
-      "Všetko z balíka GREEN FLAG SCAN",
-      "Právna kvalifikácia zistení",
-      "Návrh prostriedkov Vašej právnej ochrany"
+      "právnu kvalifikáciu",
+      "návrh prostriedkov Vašej právnej ochrany"
     ]
   },
   {
-    name: "RED FLAG SCAN",
-    tone: "Plná ochrana vrátane súdu",
-    description: "Pre prípady, v ktorých treba prejsť od analýzy k aktívnemu vymáhaniu.",
-    accentClass: "border-red-600",
-    badgeClass: "bg-red-50 text-red-800",
+    name: "Balík RED FLAG SCAN",
+    description: "naviac oproti balíku ORANGE FLAG SCAN",
     items: [
-      "Všetko z balíka ORANGE FLAG SCAN",
-      "Uplatnenie právnych prostriedkov ochrany na súde",
-      "Zastupovanie v súdnom konaní"
+      "uplatnenie právnych prostriedkov ochrany na súde",
+      "zastupovanie v súdnom konaní"
     ]
   }
 ];
 
 const complianceAreas = [
-  "Regulačné riziká: zmeny v legislatíve, AML, GDPR, ochrana spotrebiteľa a riziko sankcií.",
-  "Operačné riziká: nedostatky vo vnútorných procesoch, ktoré vedú k neúmyselnému porušeniu predpisov.",
-  "Reputačné riziká: poškodenie dobrého mena firmy v dôsledku neetického správania alebo korupcie.",
-  "Zmluvné riziká: riziká vyplývajúce zo zmluvných záväzkov a ich nastavenia."
+  "Regulačné riziká: Zmeny v legislatíve (napr. AML, GDPR, ochrana spotrebiteľa) a hrozba sankcií zo strany dozorných orgánov.",
+  "Operačné riziká: Nedostatky v interných procesoch, ktoré môžu viesť k neúmyselnému porušeniu predpisov.",
+  "Reputačné riziká: Možnosť poškodenia dobrého mena firmy v dôsledku neetického správania alebo korupcie.",
+  "Zmluvné riziká: Riziká vyplývajúce zo zmluvných záväzkov."
 ];
 
 const whistleblowingDuties = [
-  "Zaviesť bezpečný vnútorný systém preverovania oznámení.",
-  "Určiť zodpovednú osobu, internú alebo externú, ktorá oznámenia prijíma a preveruje.",
-  "Potvrdiť prijatie oznámenia do 7 dní a vybaviť ho do 90 dní.",
-  "Chrániť oznamovateľa pred odvetou, výpoveďou a šikanou."
+  "Povinnosť zaviesť vnútorný systém preverovania: Musíte mať zavedený bezpečný kanál na podávanie oznámení (online formulár, linka, pošta).",
+  "Povinnosť určenia zodpovednej osoby: Firma musí vymenovať osobu (internú alebo externú), ktorá oznámenia prijíma a nezávisle preveruje.",
+  "Povinnosť dodržiavania lehôt: Povinnosť potvrdiť prijatie oznámenia do 7 dní a vyriešiť ho do 90 dní.",
+  "Zákaz odvety: Absolútna ochrana oznamovateľa pred výpoveďou či šikanovaním na pracovisku."
 ];
 
-const optimizationActions = [
-  {
-    title: "Procesný audit",
-    description:
-      "Zmapujeme aktuálny stav a identifikujeme procesy a činnosti, ktoré neprinášajú žiadnu hodnotu."
-  },
-  {
-    title: "Redizajn tokov",
-    description:
-      "Navrhneme štíhlejšie a logickejšie postupy, ktoré zrýchlia vnútropodnikové procesy."
-  },
-  {
-    title: "Eliminácia chýb",
-    description:
-      "Nastavíme kontrolné mechanizmy tak, aby sa minimalizoval ľudský faktor a potreba neustálych opráv."
-  }
+const processAuditItems = [
+  "Zmapujeme súčasný stav",
+  "Identifikujeme procesy a činnosti, ktoré neprinášajú žiadnu hodnotu"
+];
+
+const processRedesignItems = [
+  "Navrhneme štíhlejšie a logickejšie postupy, ktoré zrýchlia vnútropodnikové procesy"
 ];
 
 const optimizationResults = [
-  "Zníženie prevádzkových nákladov vďaka odstráneniu zbytočných krokov.",
-  "Vyššia zastupiteľnosť a odolnejší chod oddelení.",
-  "Spokojnejší zamestnanci s jasnejšími kompetenciami."
+  "Zníženie prevádzkových nákladov: Menej zbytočných krokov znamená nižšie náklady na personál a réžiu.",
+  "Vyššia zastupiteľnosť: Jasne definované procesy znamenajú, že odchod jedného človeka neohrozí chod celého oddelenia.",
+  "Spokojnejší zamestnanci: Jasné kompetencie znižujú stres a frustráciu z neporiadku."
 ];
+
+function NumberedList({ items }: { items: string[] }) {
+  return (
+    <ol className="space-y-3">
+      {items.map((item, index) => (
+        <li
+          key={item}
+          className="flex gap-3 text-sm leading-7 text-black/75 sm:text-[15px]"
+        >
+          <span className="font-semibold text-black">{index + 1}.</span>
+          <span>{item}</span>
+        </li>
+      ))}
+    </ol>
+  );
+}
 
 export default function PreverenieFirmyPage() {
   return (
     <SiteShell>
       <PageHero
         badge="Preverenie firmy"
-        title="Toky, riziká a procesy v jednej logike."
-        description="Prvá záložka zo zadania je teraz samostatná podstránka. Združuje preverenie tokov firmy, identifikáciu rizík a optimalizáciu procesov tak, aby si klient vedel prejsť tému do hĺbky bez miešania s ostatnými službami."
+        title="Preverenie firmy"
+        description="Preverenie tokov firmy, identifikácia rizík - compliance a nastavenie procesov - optimalizácia."
         imageSrc="/images/tax-law.jpg"
         imageAlt="Preverenie firmy a finančných tokov"
       >
@@ -155,296 +170,294 @@ export default function PreverenieFirmyPage() {
             href="#toky-firmy"
             className="rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-medium text-black/70 transition hover:border-black/25 hover:text-black"
           >
-            Toky firmy
+            Preverenie tokov firmy
           </a>
           <a
             href="#compliance"
             className="rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-medium text-black/70 transition hover:border-black/25 hover:text-black"
           >
-            Compliance
+            Identifikácia rizík - compliance
           </a>
           <a
             href="#optimalizacia"
             className="rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-medium text-black/70 transition hover:border-black/25 hover:text-black"
           >
-            Optimalizácia
+            Nastavenie procesov - optimalizácia
           </a>
         </div>
       </PageHero>
 
       <section className="mx-auto max-w-7xl space-y-10 px-5 py-16 sm:px-6 lg:px-8">
+        <div className="grid gap-4 md:grid-cols-3">
+          {[
+            "Preverenie tokov firmy",
+            "Identifikácia rizík - compliance",
+            "Nastavenie procesov - optimalizácia"
+          ].map((item, index) => (
+            <div
+              key={item}
+              className={`rounded-[1.75rem] border p-6 ${
+                index === 0
+                  ? "border-blue-100 bg-blue-50"
+                  : index === 1
+                    ? "border-black/8 bg-white"
+                    : "border-red-100 bg-red-50"
+              }`}
+            >
+              <h2 className="text-xl font-semibold leading-snug text-black">{item}</h2>
+            </div>
+          ))}
+        </div>
+
         <article
           id="toky-firmy"
-          className="scroll-mt-32 grid gap-8 rounded-[2rem] border border-black/8 bg-neutral-50/70 p-6 sm:p-8 lg:grid-cols-[1.15fr_0.85fr]"
+          className="scroll-mt-32 space-y-8 rounded-[2rem] border border-black/8 bg-neutral-50/70 p-6 sm:p-8"
         >
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <SectionBadge>Preverenie tokov firmy</SectionBadge>
-              <h2 className="text-3xl font-semibold text-black sm:text-4xl">
-                Poskytujeme preverenie Vašich finančných tokov a identifikáciu rizík.
-              </h2>
-              <p className="max-w-2xl text-base leading-8 text-black/70">
-                Zistíme realitu, oddelíme zdravé od toxického a pripravíme prehľad, s
-                ktorým sa dá ďalej pracovať manažérsky aj právne.
+          <div className="space-y-4">
+            <SectionBadge>Preverenie tokov firmy</SectionBadge>
+            <h2 className="text-3xl font-semibold text-black sm:text-4xl">
+              Poskytujeme preverenie Vašich finančných tokov a identifikáciu rizík.
+            </h2>
+          </div>
+
+          <div className="grid gap-4 lg:grid-cols-2">
+            <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+                Podľa štatistiky
               </p>
+              <div className="mt-4 space-y-3 text-base leading-8 text-black/75">
+                <p>70% firiem má spriaznené osoby</p>
+                <p>90% tunelovania ide cez fakturáciu</p>
+              </div>
             </div>
 
-            <div className="grid gap-4 md:grid-cols-2">
-              <div className="rounded-[1.5rem] border border-black/8 bg-white p-5">
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-                  Dôvod, prečo nás klienti oslovujú
-                </p>
-                <p className="mt-4 text-sm leading-7 text-black/72">
-                  Váš účtovník iba zaúčtuje doklady, ktoré dostane, a nijako neposudzuje
+            <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+                Naša analýza je určená pre
+              </p>
+              <NumberedList items={audiences} />
+            </div>
+          </div>
+
+          <div className="grid gap-4 lg:grid-cols-2">
+            <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+                Dôvody prečo s nami spolupracovať
+              </p>
+              <div className="mt-4 space-y-4 text-base leading-8 text-black/75">
+                <p>
+                  Váš účtovník IBA zaúčtuje doklady, ktoré dostane. Nijako neposudzuje
                   ich opodstatnenie.
                 </p>
-                <div className="mt-4 rounded-2xl bg-neutral-50 p-4">
-                  <p className="text-sm leading-7 text-black/72">
-                    Audítor preverí, či účtovník postupoval v súlade s postupmi
-                    účtovania a či účtovná závierka podáva pravdivý a verný obraz.
-                  </p>
-                </div>
-              </div>
-
-              <div className="rounded-[1.5rem] border border-black/8 bg-white p-5">
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-                  Čo to ešte negarantuje
-                </p>
-                <FeatureList
-                  className="mt-4"
-                  items={[
-                    "Firma nebola okradnutá.",
-                    "Dodávateľské ceny nie sú nafúknuté.",
-                    "Dodávateľ nie je toxicky prepojený so spriaznenou osobou.",
-                    "DPH schéma neexistuje."
-                  ]}
-                />
-                <div className="mt-5 rounded-2xl border border-red-100 bg-red-50 p-4 text-sm leading-7 text-red-950">
-                  Audítor zároveň nevyhľadáva vinníkov, nezastupuje Vás ako klienta a
-                  neaplikuje právne prostriedky, aby Vás chránil.
+                <div className="space-y-3">
+                  <p>Váš audítor preverí, či:</p>
+                  <FeatureList items={auditorChecks} />
                 </div>
               </div>
             </div>
 
-            <div className="grid gap-4 lg:grid-cols-2">
-              <div className="rounded-[1.5rem] border border-black/8 bg-white p-5">
-                <div className="flex items-center gap-3">
-                  <TriangleAlert className="h-5 w-5 text-red-700" />
-                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-                    Firmy prichádzajú o časť obratu kvôli
-                  </p>
+            <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
+              <div className="space-y-4 text-base leading-8 text-black/75">
+                <div className="space-y-3">
+                  <p>... čo ale neznamená, že:</p>
+                  <FeatureList items={doesNotMean} />
                 </div>
-                <FeatureList className="mt-4" items={losses} />
-              </div>
-
-              <div className="rounded-[1.5rem] border border-black/8 bg-white p-5">
-                <div className="flex items-center gap-3">
-                  <Workflow className="h-5 w-5 text-blue-700" />
-                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-                    Zistíme realitu
-                  </p>
+                <div className="space-y-3">
+                  <p>Na druhej strane audítor:</p>
+                  <FeatureList items={auditorDoesNot} />
                 </div>
-                <FeatureList className="mt-4" items={flowSteps} />
-              </div>
-            </div>
-
-            <div className="grid gap-4 lg:grid-cols-2">
-              <div className="rounded-[1.5rem] border border-black/8 bg-white p-5">
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-                  Naša práca stojí na kombinácii
-                </p>
-                <FeatureList className="mt-4" items={flowDisciplines} />
-              </div>
-
-              <div className="rounded-[1.5rem] border border-black/8 bg-white p-5">
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-                  Výsledkom je
-                </p>
-                <FeatureList className="mt-4" items={flowOutcomes} />
-              </div>
-            </div>
-
-            <div className="space-y-4 rounded-[1.75rem] border border-blue-100 bg-blue-50 p-6">
-              <p className="text-base leading-8 text-black/75">
-                Preverenie tokov nie je len o číslach v tabuľke. Je to hĺbkový sken
-                zdravia Vašej firmy. Identifikujeme, kde sa peniaze zbytočne strácajú
-                a či sú Vaše transakcie v súlade s Vašimi záujmami a stratégiou.
-              </p>
-              <p className="text-base leading-8 text-black/75">
-                Či už plánujete akvizíciu, alebo chcete upratať vo vlastnom podnikaní,
-                detailný audit tokov Vám dodá potrebný pokoj.
-              </p>
-            </div>
-
-            <CtaRow />
-          </div>
-
-          <div className="space-y-6">
-            <div className="space-y-4 rounded-[1.8rem] border border-black/10 bg-white p-6">
-              <div className="flex items-center gap-3">
-                <Landmark className="h-5 w-5 text-black" />
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-                  Ponúkané balíky
-                </p>
-              </div>
-              <div className="space-y-4">
-                {packages.map((pkg) => (
-                  <div
-                    key={pkg.name}
-                    className={`rounded-[1.4rem] border border-black/8 border-l-4 bg-neutral-50 p-5 ${pkg.accentClass}`}
-                  >
-                    <div className="flex flex-wrap items-center justify-between gap-3">
-                      <div>
-                        <h3 className="text-lg font-semibold text-black">{pkg.name}</h3>
-                        <p className="text-sm text-black/65">{pkg.tone}</p>
-                      </div>
-                      <span className={`rounded-full px-3 py-1 text-xs font-semibold ${pkg.badgeClass}`}>
-                        {pkg.description}
-                      </span>
-                    </div>
-                    <FeatureList className="mt-4" items={pkg.items} />
-                  </div>
-                ))}
               </div>
             </div>
           </div>
-        </article>
 
-        <article
-          id="compliance"
-          className="scroll-mt-32 grid gap-8 rounded-[2rem] border border-black/8 bg-white p-6 sm:p-8 lg:grid-cols-[0.95fr_1.05fr]"
-        >
-          <div className="space-y-6">
-            <SectionBadge>Identifikácia rizík - compliance</SectionBadge>
-            <h2 className="text-3xl font-semibold text-black sm:text-4xl">
-              Riziká treba rozpoznať skôr, než začnú riadiť firmu za Vás.
-            </h2>
-            <p className="text-base leading-8 text-black/72">
-              Proces identifikácie rizík patrí medzi základné piliere úspešného
-              riadenia firmy. Cieľom je včas rozpoznať a zaevidovať faktory, ktoré by
-              mohli viesť k porušeniu právnych predpisov, interných noriem alebo k
-              nesúladu s platnými právnymi normami.
+          <div className="grid gap-4 lg:grid-cols-2">
+            <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+                Firmy prichádzajú o časť obratu kvôli
+              </p>
+              <FeatureList className="mt-4" items={losses} />
+            </div>
+
+            <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+                Zistíme realitu – oddelíme zdravé od toxického – pripravíme prehľad
+              </p>
+              <div className="mt-4">
+                <NumberedList items={flowSteps} />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid gap-4 lg:grid-cols-2">
+            <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+                Naša práca spočíva v kombinácii
+              </p>
+              <FeatureList className="mt-4" items={flowDisciplines} />
+            </div>
+
+            <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+                Výsledkom čoho
+              </p>
+              <FeatureList className="mt-4" items={flowOutcomes} />
+            </div>
+          </div>
+
+          <div className="space-y-4 rounded-[1.75rem] border border-blue-100 bg-blue-50 p-6">
+            <p className="text-base leading-8 text-black/75">
+              Preverenie tokov nie je len o číslach v tabuľke. Je to hĺbkový sken
+              zdravia Vašej firmy. Identifikujeme, kde sa peniaze zbytočne strácajú a
+              či sú Vaše transakcie v súlade s Vašimi záujmami a stratégiou.
             </p>
-
-            <div className="rounded-[1.75rem] border border-black/8 bg-neutral-50 p-6">
-              <div className="flex items-center gap-3">
-                <ShieldCheck className="h-5 w-5 text-blue-700" />
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-                  Tip: Whistleblowing
-                </p>
-              </div>
-              <p className="mt-4 text-sm leading-7 text-black/72">
-                Whistleblowing nepredstavuje „donášanie“. Je to efektívny nástroj
-                vnútornej kontroly firmy, ktorý umožňuje odhaliť podvody, korupciu a
-                iné nekalé praktiky skôr, než spôsobia nenapraviteľné škody.
-              </p>
-            </div>
-
-            <div className="rounded-[1.75rem] border border-red-100 bg-red-50 p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-red-900/75">
-                Vaše zákonné povinnosti
-              </p>
-              <p className="mt-4 text-sm leading-7 text-red-950">
-                Ak zamestnávate 50 a viac zamestnancov alebo pôsobíte v špecifických
-                sektoroch, napríklad vo finančných službách, zákon Vám ukladá jasné
-                povinnosti.
-              </p>
-              <FeatureList className="mt-4" items={whistleblowingDuties} />
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            {complianceAreas.map((area, index) => (
-              <div
-                key={area}
-                className={`rounded-[1.5rem] border p-5 ${
-                  index % 2 === 0
-                    ? "border-blue-100 bg-blue-50"
-                    : "border-black/8 bg-neutral-50"
-                }`}
-              >
-                <div className="flex items-start gap-4">
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-white">
-                    {index === 0 ? (
-                      <ShieldCheck className="h-5 w-5 text-blue-700" />
-                    ) : index === 1 ? (
-                      <SlidersHorizontal className="h-5 w-5 text-black" />
-                    ) : index === 2 ? (
-                      <Sparkles className="h-5 w-5 text-red-700" />
-                    ) : (
-                      <ShieldCheck className="h-5 w-5 text-black" />
-                    )}
-                  </div>
-                  <p className="text-sm leading-7 text-black/78">{area}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </article>
-
-        <article
-          id="optimalizacia"
-          className="scroll-mt-32 grid gap-8 rounded-[2rem] border border-black/8 bg-neutral-50/80 p-6 sm:p-8 lg:grid-cols-[1.05fr_0.95fr]"
-        >
-          <div className="space-y-6">
-            <SectionBadge>Nastavenie procesov - optimalizácia</SectionBadge>
-            <h2 className="text-3xl font-semibold text-black sm:text-4xl">
-              Od chaosu k efektivite.
-            </h2>
-            <p className="text-base leading-8 text-black/72">
-              Tento segment je pre klientov atraktívny preto, že sľubuje priamu úsporu
-              peňazí a času. Ak firma rastie, ale zisky stagnujú, často sú za tým
-              neviditeľní zlodeji: neefektívne nastavené procesy, duplicita úloh a zlé
-              odovzdávanie informácií.
+            <p className="text-base leading-8 text-black/75">
+              Či už plánujete akvizíciu, alebo chcete upratať vo vlastnom podnikaní,
+              detailný audit tokov Vám dodá potrebný pokoj. Preveríme históriu
+              transakcií, odhalíme neštandardné operácie a nastavíme zrkadlo Vašej
+              finančnej kondícii. S nami budete presne vedieť, odkiaľ peniaze
+              prichádzajú a kam skutočne odchádzajú.
             </p>
+          </div>
 
-            <div className="grid gap-4">
-              {optimizationActions.map((item) => (
-                <div key={item.title} className="rounded-[1.5rem] border border-black/8 bg-white p-5">
-                  <div className="flex items-center gap-3">
-                    <Workflow className="h-5 w-5 text-blue-700" />
-                    <h3 className="text-lg font-semibold text-black">{item.title}</h3>
-                  </div>
-                  <p className="mt-3 text-sm leading-7 text-black/68">{item.description}</p>
+          <div className="space-y-4 rounded-[1.75rem] border border-black/8 bg-white p-6">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+              Ponúkané balíky
+            </p>
+            <div className="space-y-4">
+              {packages.map((pkg, index) => (
+                <div
+                  key={pkg.name}
+                  className={`rounded-[1.4rem] border p-5 ${
+                    index === 0
+                      ? "border-emerald-200 bg-emerald-50"
+                      : index === 1
+                        ? "border-orange-200 bg-orange-50"
+                        : "border-red-200 bg-red-50"
+                  }`}
+                >
+                  <h3 className="text-lg font-semibold text-black">{pkg.name}</h3>
+                  <p className="mt-2 text-sm leading-7 text-black/70">{pkg.description}</p>
+                  <FeatureList className="mt-4" items={pkg.items} />
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="space-y-6">
-            <div className="rounded-[1.8rem] border border-black/8 bg-white p-6">
-              <div className="flex items-center gap-3">
-                <BadgeCheck className="h-5 w-5 text-red-700" />
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-                  Merateľné výsledky
-                </p>
-              </div>
-              <FeatureList className="mt-4" items={optimizationResults} />
-            </div>
+          <CtaRow />
+        </article>
 
-            <div className="rounded-[1.8rem] border border-blue-100 bg-blue-50 p-6">
-              <p className="text-sm leading-7 text-black/75">
-                Táto podstránka prirodzene nadväzuje aj na ďalšie služby. Ak klient ešte
-                len zakladá novú štruktúru, vhodným pokračovaním je{" "}
-                <Link
-                  href="/zakladanie-a-zmeny"
-                  className="font-semibold text-black underline decoration-black/25 underline-offset-4"
-                >
-                  zakladanie a zmeny
-                </Link>
-                . Ak naopak rieši reštrukturalizáciu, nadväzuje sekcia{" "}
-                <Link
-                  href="/premeny-a-zlucenia"
-                  className="font-semibold text-black underline decoration-black/25 underline-offset-4"
-                >
-                  premeny a zlúčenia
-                </Link>
-                .
+        <article
+          id="compliance"
+          className="scroll-mt-32 space-y-8 rounded-[2rem] border border-black/8 bg-white p-6 sm:p-8"
+        >
+          <div className="space-y-4">
+            <SectionBadge>Identifikácia rizík - compliance</SectionBadge>
+            <p className="text-base leading-8 text-black/75">
+              Proces identifikácie rizík predstavuje jeden zo základných pilierov pre
+              úspešné riadenie firmy. Cieľom je včasné rozpoznanie a zaevidovanie
+              všetkých faktorov, ktoré by mohli viesť k porušeniu právnych predpisov,
+              interných noriem alebo k ich nesúladu s platnými právnymi normami.
+            </p>
+          </div>
+
+          <div className="rounded-[1.75rem] border border-black/8 bg-neutral-50 p-6">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+              Kľúčové oblasti sledovania
+            </p>
+            <FeatureList className="mt-4" items={complianceAreas} />
+          </div>
+
+          <div className="grid gap-4 lg:grid-cols-2">
+            <div className="rounded-[1.75rem] border border-blue-100 bg-blue-50 p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+                Tip: Viete o povinnosti zaviesť systém ochrany oznamovateľov protispoločenskej činnosti – tzv. Whistleblowing
+              </p>
+              <p className="mt-4 text-base leading-8 text-black/75">
+                Whistleblowing nepredstavuje „donášanie“, ale je to jeden z efektívnych
+                spôsobov vnútornej kontroly firmy, ktorý umožňuje odhaliť podvody,
+                korupciu alebo iné nekalé praktiky skôr, než spôsobia nenapraviteľné
+                škody.
               </p>
             </div>
 
-            <CtaRow />
+            <div className="rounded-[1.75rem] border border-red-100 bg-red-50 p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+                Vaše zákonné povinnosti
+              </p>
+              <p className="mt-4 text-base leading-8 text-black/75">
+                Ak zamestnávate 50 a viac zamestnancov (alebo pôsobíte v špecifických
+                sektoroch ako finančné služby), zákon vám ukladá nasledovné povinnosti:
+              </p>
+              <FeatureList className="mt-4" items={whistleblowingDuties} />
+            </div>
           </div>
+
+          <p className="text-base leading-8 text-black/75">
+            Neváhajte nás kontaktovať pre viac informácií k tejto téme.
+          </p>
+
+          <CtaRow />
+        </article>
+
+        <article
+          id="optimalizacia"
+          className="scroll-mt-32 space-y-8 rounded-[2rem] border border-black/8 bg-neutral-50/80 p-6 sm:p-8"
+        >
+          <div className="space-y-4">
+            <SectionBadge>Nastavenie procesov - optimalizácia</SectionBadge>
+            <p className="text-base leading-8 text-black/75">
+              Tento segment je pre klientov najatraktívnejší, pretože im priamo sľubuje
+              úsporu peňazí a času.
+            </p>
+            <h2 className="text-3xl font-semibold text-black sm:text-4xl">
+              Optimalizácia procesov = Od chaosu k efektivite
+            </h2>
+            <p className="text-base leading-8 text-black/75">
+              Máte pocit, že Vaša firma rastie, ale zisky stagnujú? Často sú za tým
+              „neviditeľní zlodeji“ – neefektívne nastavené procesy, duplicita úloh a
+              zlé odovzdávanie informácií. Naša optimalizácia nie je o teórii, ale o
+              odstránení bariér, ktoré brzdia váš biznis.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+              Čo presne pre vás urobíme
+            </p>
+
+            <div className="grid gap-4 lg:grid-cols-3">
+              <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
+                <h3 className="text-lg font-semibold text-black">Procesný audit</h3>
+                <FeatureList className="mt-4" items={processAuditItems} />
+              </div>
+
+              <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
+                <h3 className="text-lg font-semibold text-black">Redizajn tokov</h3>
+                <FeatureList className="mt-4" items={processRedesignItems} />
+              </div>
+
+              <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
+                <h3 className="text-lg font-semibold text-black">Eliminácia chýb</h3>
+                <p className="mt-4 text-sm leading-7 text-black/75">
+                  Nastavíme kontrolné mechanizmy tak, aby sa minimalizoval ľudský
+                  faktor a potreba neustálych opráv.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-[1.75rem] border border-black/8 bg-white p-6">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+              Merateľné výsledky pre Vašu firmu
+            </p>
+            <FeatureList className="mt-4" items={optimizationResults} />
+          </div>
+
+          <p className="text-base leading-8 text-black/75">
+            Neváhajte nás kontaktovať pre viac informácií k tejto téme.
+          </p>
+
+          <CtaRow />
         </article>
       </section>
     </SiteShell>

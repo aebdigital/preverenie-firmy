@@ -11,12 +11,10 @@ export function SiteFooter() {
               prevereniefirmy.sk
             </p>
             <h2 className="max-w-lg text-4xl font-semibold leading-tight text-white sm:text-5xl">
-              Právny, finančný a procesný pohľad na firmu bez zbytočného šumu.
+              {contactDetails.company}
             </h2>
             <p className="max-w-xl text-base leading-8 text-white/72">
-              {contactDetails.company}, {contactDetails.subtitle}. Pomáhame s preverovaním
-              firmy, compliance, optimalizáciou procesov, korporátnymi zmenami aj
-              ukončením subjektov.
+              {contactDetails.subtitle}
             </p>
           </div>
 
@@ -65,7 +63,7 @@ export function SiteFooter() {
             href="/o-nas-a-kontakt#formular"
             className="inline-flex h-12 items-center justify-center rounded-full border border-white/14 px-6 text-sm font-semibold text-white transition hover:border-white/30 hover:bg-white/6"
           >
-            Vyžiadať cenovú ponuku
+            Dohodnite si stretnutie / Vyžiadajte cenovú ponuku
           </Link>
         </div>
       </div>

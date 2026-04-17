@@ -36,7 +36,9 @@ export function SiteHeader() {
                 key={item.href}
                 href={item.href}
                 className={`text-sm font-medium transition ${
-                  active ? "text-black" : "text-black/60 hover:text-black"
+                  active
+                    ? "text-black underline decoration-2 underline-offset-8"
+                    : "text-black/60 hover:text-black"
                 }`}
               >
                 {item.label}
@@ -62,8 +64,10 @@ export function SiteHeader() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`whitespace-nowrap text-sm font-medium ${
-                  active ? "text-black" : "text-black/60"
+                className={`whitespace-nowrap text-sm font-medium transition ${
+                  active
+                    ? "text-black underline decoration-2 underline-offset-6"
+                    : "text-black/60 hover:text-black"
                 }`}
               >
                 {item.label}

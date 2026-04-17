@@ -53,9 +53,9 @@ export function FeatureList({
 
 export function CtaRow({
   primaryHref = "/o-nas-a-kontakt#formular",
-  primaryLabel = "Dohodnite si stretnutie",
-  secondaryHref = "/o-nas-a-kontakt#formular",
-  secondaryLabel = "Vyžiadať cenovú ponuku"
+  primaryLabel = "Dohodnite si stretnutie / Vyžiadajte cenovú ponuku",
+  secondaryHref,
+  secondaryLabel
 }: {
   primaryHref?: string;
   primaryLabel?: string;
@@ -70,13 +70,15 @@ export function CtaRow({
       >
         {primaryLabel}
       </Link>
-      <Link
-        href={secondaryHref}
-        className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-black/12 bg-white px-6 text-sm font-semibold text-black transition hover:border-black/30"
-      >
-        {secondaryLabel}
-        <ArrowRight className="h-4 w-4" />
-      </Link>
+      {secondaryHref && secondaryLabel ? (
+        <Link
+          href={secondaryHref}
+          className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-black/12 bg-white px-6 text-sm font-semibold text-black transition hover:border-black/30"
+        >
+          {secondaryLabel}
+          <ArrowRight className="h-4 w-4" />
+        </Link>
+      ) : null}
     </div>
   );
 }

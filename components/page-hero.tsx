@@ -8,6 +8,7 @@ export function PageHero({
   description,
   imageSrc,
   imageAlt,
+  titleClassName,
   children
 }: {
   badge: string;
@@ -15,6 +16,7 @@ export function PageHero({
   description: string;
   imageSrc: string;
   imageAlt: string;
+  titleClassName?: string;
   children?: ReactNode;
 }) {
   return (
@@ -24,7 +26,11 @@ export function PageHero({
         <div className="space-y-6">
           <SectionBadge>{badge}</SectionBadge>
           <div className="space-y-4">
-            <h1 className="font-display text-5xl leading-[0.98] text-balance text-black sm:text-6xl">
+            <h1
+              className={`font-display text-5xl leading-[0.98] text-balance text-black sm:text-6xl ${
+                titleClassName ?? ""
+              }`}
+            >
               {title}
             </h1>
             <p className="max-w-2xl text-base leading-8 text-black/72 sm:text-lg">
