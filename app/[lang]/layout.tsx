@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Fraunces, Raleway } from "next/font/google";
+import { notFound } from "next/navigation";
 import "../globals.css";
-import { i18n, type Locale } from "@/i18n-config";
+import { i18n, isLocale, type Locale } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionary";
 import { getLocalizedPath } from "@/pathnames";
 import { contactDetails } from "@/lib/site-content";
@@ -30,6 +31,8 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
+  if (!isLocale(lang)) notFound();
+
   const locale = lang as Locale;
   const dict = await getDictionary(locale);
 
@@ -47,8 +50,11 @@ export async function generateMetadata({
     },
     description: dict.meta.description,
     icons: {
-      icon: [{ url: "/favicon.png", type: "image/png" }],
-      shortcut: [{ url: "/favicon.png", type: "image/png" }],
+      icon: [
+        { url: "/favicon.ico", sizes: "any" },
+        { url: "/favicon.png", type: "image/png" }
+      ],
+      shortcut: [{ url: "/favicon.ico", sizes: "any" }],
       apple: [{ url: "/favicon.png", type: "image/png" }]
     },
     alternates: {
@@ -99,6 +105,8 @@ export default async function LangLayout({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
+  if (!isLocale(lang)) notFound();
+
   const locale = lang as Locale;
   const dictionary = await getDictionary(locale);
 

@@ -1,6 +1,6 @@
-import { redirect } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { getLocalizedPath } from "@/pathnames";
-import type { Locale } from "@/i18n-config";
+import { isLocale } from "@/i18n-config";
 
 export default async function LangRootPage({
   params
@@ -8,5 +8,7 @@ export default async function LangRootPage({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  redirect(getLocalizedPath("/preverenie-firmy", lang as Locale));
+  if (!isLocale(lang)) notFound();
+
+  redirect(getLocalizedPath("/preverenie-firmy", lang));
 }
