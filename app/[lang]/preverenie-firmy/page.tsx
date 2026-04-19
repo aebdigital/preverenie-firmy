@@ -85,7 +85,7 @@ export default async function AuditPage({
             {
               label: t.heroCards.compliance,
               href: "#compliance",
-              image: "/images/legal-office.jpg"
+              image: "/images/compliance.jpg"
             },
             {
               label: t.heroCards.optimization,
@@ -126,47 +126,65 @@ export default async function AuditPage({
             <p className="text-base leading-8 text-black/75">{t.flows.heading}</p>
           </div>
 
-          <div className="grid gap-4 lg:grid-cols-2">
-            <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-                {t.flows.statsLabel}
-              </p>
-              <div className="mt-4 space-y-3 text-base leading-8 text-black/75">
-                {t.flows.stats.map((s) => (
-                  <p key={s}>{s}</p>
-                ))}
-              </div>
+          <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <div className="overflow-hidden rounded-[2rem] border border-black/8">
+              <Image
+                src="/images/audit-committee.jpg"
+                alt={t.flows.audienceLabel}
+                width={1200}
+                height={900}
+                className="aspect-[4/3] w-full object-cover"
+              />
             </div>
-
-            <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+            <div className="space-y-4">
+              <div className="space-y-4 rounded-[1.5rem] border border-blue-100 bg-blue-50 p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-black/45">
+                  {t.flows.statsLabel}
+                </p>
+                <div className="space-y-3">
+                  {t.flows.stats.map((s) => (
+                    <p key={s} className="text-base leading-8 text-black/80">
+                      {s}
+                    </p>
+                  ))}
+                </div>
+              </div>
+              <h3 className="font-display text-xl text-black sm:text-2xl">
                 {t.flows.audienceLabel}
-              </p>
+              </h3>
               <NumberedList items={t.flows.audience} />
             </div>
           </div>
 
-          <div className="grid gap-4 lg:grid-cols-2">
-            <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-                {t.flows.reasonsLabel}
-              </p>
-              <div className="mt-4 space-y-4 text-base leading-8 text-black/75">
-                <p>{t.flows.accountantIntro}</p>
-                <div className="space-y-3">
+          <div className="space-y-6">
+            <h3 className="font-display text-2xl font-semibold text-black sm:text-3xl">
+              {t.flows.reasonsLabel}
+            </h3>
+            <div className="grid gap-6 lg:grid-cols-3">
+              <div className="space-y-3">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-black/45">
+                  {locale === "en" ? "Accountant" : "Účtovník"}
+                </p>
+                <p className="text-base leading-8 text-black/75">
+                  {t.flows.accountantIntro}
+                </p>
+              </div>
+              <div className="space-y-3">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-black/45">
+                  {locale === "en" ? "Auditor" : "Audítor"}
+                </p>
+                <div className="space-y-3 text-base leading-8 text-black/75">
                   <p>{t.flows.auditorIntro}</p>
                   <FeatureList items={t.flows.auditorChecks} />
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
-              <div className="space-y-4 text-base leading-8 text-black/75">
-                <div className="space-y-3">
                   <p>{t.flows.doesNotMeanIntro}</p>
                   <FeatureList items={t.flows.doesNotMean} />
                 </div>
-                <div className="space-y-3">
+              </div>
+              <div className="space-y-3">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-black/45">
+                  {locale === "en" ? "Auditor does not" : "Audítor nerobí"}
+                </p>
+                <div className="space-y-3 text-base leading-8 text-black/75">
                   <p>{t.flows.auditorDoesNotIntro}</p>
                   <FeatureList items={t.flows.auditorDoesNot} />
                 </div>
@@ -174,46 +192,63 @@ export default async function AuditPage({
             </div>
           </div>
 
-          <div className="grid gap-4 lg:grid-cols-2">
-            <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+          <div className="grid gap-8 lg:grid-cols-2">
+            <div className="space-y-4">
+              <h3 className="font-display text-2xl font-semibold text-black sm:text-3xl">
                 {t.flows.lossesLabel}
-              </p>
-              <FeatureList className="mt-4" items={t.flows.losses} />
+              </h3>
+              <FeatureList items={t.flows.losses} />
             </div>
 
-            <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+            <div className="space-y-4">
+              <h3 className="font-display text-2xl font-semibold text-black sm:text-3xl">
                 {t.flows.stepsLabel}
-              </p>
-              <div className="mt-4">
-                <NumberedList items={t.flows.steps} />
+              </h3>
+              <NumberedList items={t.flows.steps} />
+            </div>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+            <div className="space-y-6">
+              <div className="space-y-4">
+                <h3 className="font-display text-xl text-black sm:text-2xl">
+                  {t.flows.disciplinesLabel}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {t.flows.disciplines.map((d) => (
+                    <span
+                      key={d}
+                      className="rounded-full border border-black/10 bg-neutral-50 px-4 py-2 text-sm font-medium text-black/80"
+                    >
+                      {d}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="space-y-4">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+                  {t.flows.outcomesLabel}
+                </p>
+                <FeatureList items={t.flows.outcomes} />
               </div>
             </div>
-          </div>
-
-          <div className="grid gap-4 lg:grid-cols-2">
-            <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-                {t.flows.disciplinesLabel}
-              </p>
-              <FeatureList className="mt-4" items={t.flows.disciplines} />
-            </div>
-
-            <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-                {t.flows.outcomesLabel}
-              </p>
-              <FeatureList className="mt-4" items={t.flows.outcomes} />
+            <div className="overflow-hidden rounded-[2rem] border border-black/8">
+              <Image
+                src="/images/tax-law.jpg"
+                alt={t.flows.disciplinesLabel}
+                width={1200}
+                height={900}
+                className="aspect-[4/3] w-full object-cover"
+              />
             </div>
           </div>
 
-          <div className="space-y-4 rounded-[1.75rem] border border-blue-100 bg-blue-50 p-6">
+          <div className="space-y-4 rounded-[1.75rem]">
             <p className="text-base leading-8 text-black/75">{t.flows.summary1}</p>
             <p className="text-base leading-8 text-black/75">{t.flows.summary2}</p>
           </div>
 
-          <div className="space-y-4 rounded-[1.75rem] border border-black/8 bg-white p-6">
+          <div className="space-y-4 rounded-[1.75rem]">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
               {t.flows.packagesLabel}
             </p>
@@ -251,11 +286,22 @@ export default async function AuditPage({
             <p className="text-base leading-8 text-black/75">{t.compliance.intro}</p>
           </div>
 
-          <div className="rounded-[1.75rem] border border-black/8 bg-neutral-50 p-6">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-              {t.compliance.areasLabel}
-            </p>
-            <FeatureList className="mt-4" items={t.compliance.areas} />
+          <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+            <div className="space-y-4">
+              <h3 className="font-display text-xl text-black sm:text-2xl">
+                {t.compliance.areasLabel}
+              </h3>
+              <FeatureList items={t.compliance.areas} />
+            </div>
+            <div className="overflow-hidden rounded-[2rem] border border-black/8">
+              <Image
+                src="/images/compliance.jpg"
+                alt={t.compliance.areasLabel}
+                width={1200}
+                height={900}
+                className="aspect-[4/3] w-full object-cover"
+              />
+            </div>
           </div>
 
           <div className="grid gap-4 lg:grid-cols-2">
@@ -268,11 +314,11 @@ export default async function AuditPage({
               </p>
             </div>
 
-            <div className="rounded-[1.75rem] border border-red-100 bg-red-50 p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+            <div className="space-y-4">
+              <h3 className="text-2xl font-semibold text-black sm:text-3xl">
                 {t.compliance.dutiesLabel}
-              </p>
-              <p className="mt-4 text-base leading-8 text-black/75">
+              </h3>
+              <p className="text-base leading-8 text-black/75">
                 {t.compliance.dutiesIntro}
               </p>
               <FeatureList className="mt-4" items={t.compliance.duties} />
@@ -301,7 +347,7 @@ export default async function AuditPage({
             <p className="text-base leading-8 text-black/75">{t.optimization.intro}</p>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-4 rounded-[1.5rem] border border-black/8 bg-white p-6 sm:p-8">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
               {t.optimization.whatLabel}
             </p>
@@ -310,25 +356,25 @@ export default async function AuditPage({
               {t.optimization.cards.map((card) => (
                 <div
                   key={card.title}
-                  className="rounded-[1.5rem] border border-black/8 bg-white p-6"
+                  className="space-y-3"
                 >
                   <h3 className="text-lg font-semibold text-black">{card.title}</h3>
                   {card.items ? (
-                    <FeatureList className="mt-4" items={card.items} />
+                    <FeatureList items={card.items} />
                   ) : null}
                   {card.text ? (
-                    <p className="mt-4 text-sm leading-7 text-black/75">{card.text}</p>
+                    <FeatureList items={[card.text]} />
                   ) : null}
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="rounded-[1.75rem] border border-black/8 bg-white p-6">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+          <div className="space-y-4">
+            <h3 className="font-display text-2xl font-semibold text-black sm:text-3xl">
               {t.optimization.resultsLabel}
-            </p>
-            <FeatureList className="mt-4" items={t.optimization.results} />
+            </h3>
+            <FeatureList items={t.optimization.results} />
           </div>
 
           <p className="text-base leading-8 text-black/75">{t.optimization.outro}</p>

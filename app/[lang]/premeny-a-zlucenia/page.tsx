@@ -55,7 +55,7 @@ export default async function MergersPage({
       <PageHero
         title={t.heroTitle}
         description={t.heroDescription}
-        imageSrc="/images/litigation.jpg"
+        imageSrc="/images/merger.webp"
         imageAlt={t.heroTitle}
       >
         <CtaRow primaryHref={contactHref} primaryLabel={dict.cta.primary} />
@@ -66,10 +66,10 @@ export default async function MergersPage({
           <p className="text-base leading-8 text-black/75">{t.intro}</p>
         </article>
 
-        <article className="space-y-6 rounded-[2rem] border border-black/8 bg-white p-6 sm:p-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+        <article className="space-y-6">
+          <h2 className="font-display text-3xl font-semibold text-black sm:text-4xl">
             {t.typesLabel}
-          </p>
+          </h2>
           <div className="grid gap-4 lg:grid-cols-3">
             {t.types.map((type) => (
               <div

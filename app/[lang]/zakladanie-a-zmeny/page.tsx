@@ -55,7 +55,7 @@ export default async function FormationPage({
       <PageHero
         title={t.heroTitle}
         description={t.heroDescription}
-        imageSrc="/images/contact-office.jpg"
+        imageSrc="/images/zakladanie.jpg"
         imageAlt={t.heroTitle}
       >
         <CtaRow primaryHref={contactHref} primaryLabel={dict.cta.primary} />
@@ -65,7 +65,7 @@ export default async function FormationPage({
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div className="overflow-hidden rounded-[2rem] border border-black/8">
             <Image
-              src="/images/formation.jpg"
+              src="/images/zakladanie-2.jpg"
               alt={t.servicesLabel}
               width={1200}
               height={900}
@@ -87,10 +87,10 @@ export default async function FormationPage({
           </div>
         </div>
 
-        <article className="space-y-6 rounded-[2rem] border border-black/8 bg-neutral-50/70 p-6 sm:p-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+        <article className="space-y-6">
+          <h2 className="font-display text-3xl font-semibold text-black sm:text-4xl">
             {t.benefitsLabel}
-          </p>
+          </h2>
           <p className="text-base leading-8 text-black/75">{t.whyText}</p>
           <FeatureList items={t.benefits} />
         </article>
