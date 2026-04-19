@@ -18,7 +18,8 @@
     }
   },
   "cta": {
-    "primary": "Dohodnúť stretnutie"
+    "primary": "Dohodnúť stretnutie",
+    "subsection": "Dohodnite si stretnutie / Vyžiadať cenovú ponuku"
   },
   "footer": {
     "tagline": "Preverenie firmy, compliance a optimalizácia procesov pod dohľadom advokátskej kancelárie.",
@@ -44,7 +45,10 @@
       "badge": "Preverenie tokov firmy",
       "heading": "Poskytujeme preverenie Vašich finančných tokov a identifikáciu rizík.",
       "statsLabel": "Podľa štatistiky",
-      "stats": ["70% firiem má spriaznené osoby", "90% tunelovania ide cez fakturáciu"],
+      "stats": [
+        "70% firiem má spriaznené osoby",
+        "90% tunelovania ide cez fakturáciu"
+      ],
       "audienceLabel": "Naša analýza je určená pre",
       "audience": [
         "Pre majiteľov",
@@ -61,7 +65,7 @@
       "auditorChecks": [
         "Váš účtovník postupoval pri zaúčtovaní dokladov v súlade s postupmi účtovania",
         "Vaša účtovná závierka podáva pravdivý a verný obraz",
-        "Inak povedané, či Vaše čísla sedia s dokladmi a či sú zaúčtované podľa zákona"
+        "inak povedané či Vaše čísla sedia s dokladmi a či sú zaúčtované podľa zákona...."
       ],
       "doesNotMeanIntro": "... čo ale neznamená, že:",
       "doesNotMean": [
@@ -129,7 +133,10 @@
         {
           "name": "Balík ORANGE FLAG SCAN",
           "description": "naviac oproti balíku GREEN FLAG SCAN",
-          "items": ["právnu kvalifikáciu", "návrh prostriedkov Vašej právnej ochrany"]
+          "items": [
+            "právnu kvalifikáciu",
+            "návrh prostriedkov Vašej právnej ochrany"
+          ]
         },
         {
           "name": "Balík RED FLAG SCAN",
@@ -193,102 +200,123 @@
         "Vyššia zastupiteľnosť: Jasne definované procesy znamenajú, že odchod jedného človeka neohrozí chod celého oddelenia.",
         "Spokojnejší zamestnanci: Jasné kompetencie znižujú stres a frustráciu z neporiadku."
       ],
-      "outro": "Neváhajte nás kontaktovať pre viac informácií k tejto téme."
+      "outro": "Neváhajte nás kontaktovať pre viac informácií k tejto téme.",
+      "preamble": "Tento segment je pre klientov najatraktívnejší, pretože im priamo sľubuje úsporu peňazí a času."
     }
   },
   "formation": {
     "seoTitle": "Zakladanie obchodných spoločností a zmeny",
-    "seoDescription": "Komplexné zakladanie obchodných spoločností a zmeny od prvotného návrhu po zápis do obchodného registra a následné zmeny v firemnej štruktúre.",
+    "seoDescription": "Zakladanie obchodných spoločností, neziskových organizácií a občianskych združení. Kompletný servis zastrešený advokátskou kanceláriou LegisPro, s.r.o.",
     "heroTitle": "Zakladanie obchodných spoločností a zmeny",
-    "heroDescription": "Od nápadu po funkčnú firmu. Pripravíme Vám právne, daňovo aj procesne nastavený subjekt, s ktorým budete pripravení rásť.",
-    "foundingLabel": "Zakladanie obchodných spoločností",
-    "foundingHeading": "Kompletné nastavenie spoločnosti od prvého dňa",
-    "foundingIntro": "Pripravíme nielen zakladateľské dokumenty, ale aj celkovú architektúru firmy – od vlastníckej štruktúry, cez účel spoločnosti, až po súvisiace zmluvné dokumenty.",
-    "foundingItemsLabel": "Čo zahŕňa naša služba",
-    "foundingItems": [
-      "Analýza podnikateľského zámeru a odporučenie vhodnej právnej formy",
-      "Vypracovanie zakladateľských dokumentov (spoločenská zmluva, stanovy, zakladateľská listina)",
-      "Zabezpečenie súhlasov vlastníkov sídla a ohlasovacích povinností",
-      "Zápis do obchodného registra a registrácie na daňových úradoch",
-      "Príprava štatutárnych a kompetenčných dokumentov (rokovací poriadok, organizačná schéma)",
-      "Konzultácie k účtovnej a daňovej stratégii pri štarte podnikania"
+    "heroDescription": "Kompletný servis pri zakladaní spoločností a zmenách – právne, daňovo aj compliance od prvého dňa.",
+    "whyLabel": "Prečo začať s nami?",
+    "whyText": "Na rozdiel od bežných „zakladateľských firiem“ sa na Váš nový subjekt pozeráme očami advokátov a compliance špecialistov. Už pri vzniku vám nastavíme základné procesy tak, aby ste od prvého dňa fungovali v súlade so zákonom a vyhli sa budúcim rizikám.",
+    "servicesLabel": "Naše služby",
+    "services": [
+      "Založenie spoločnosti s ručením obmedzeným (S.R.O.)",
+      "Založenie akciovej spoločnosti (A.S.)",
+      "Registrácia zoznamu akcionárov do Centrálneho depozitára cenných papierov",
+      "Založenie občianskeho združenia či neziskovej organizácie",
+      "Založenie družstva",
+      "Zmeny v existujúcich štruktúrach, ako napr.:"
     ],
-    "changesLabel": "Zmeny v obchodných spoločnostiach",
-    "changesHeading": "Zmeny, ktoré nespomaľujú Vaše podnikanie",
-    "changesIntro": "Ak dochádza k zmene v spoločnosti, rýchlosť a presnosť sú kľúčové. Pripravíme všetky potrebné dokumenty, zabezpečíme notárske úkony aj zápis do obchodného registra.",
-    "changesItems": [
-      "Zmena obchodného mena, sídla alebo predmetov podnikania",
-      "Prevod obchodných podielov a zmena spoločníkov",
-      "Zmeny v štatutárnych orgánoch a v konaní za spoločnosť",
-      "Zvýšenie alebo zníženie základného imania",
-      "Nastavenie kontrolných mechanizmov a oprávnení spoločníkov",
-      "Aktualizácia interných smerníc a zmluvnej dokumentácie"
-    ]
+    "changesSubItems": [
+      "prevod obchodného podielu",
+      "zmena konateľa, konečného užívateľa výhod, adresy sídla, predmetov podnikania atď."
+    ],
+    "benefitsLabel": "Výhody spolupráce",
+    "benefits": [
+      "Na diaľku, osobná návšteva nie je nevyhnutná",
+      "Kompletný servis vrátane získania živnostenského oprávnenia",
+      "Expresné vypracovanie dokumentov",
+      "Poradenstvo, najmä identifikácia na mieru ušitej formy podnikania, zahrnuté v cene",
+      "Bez nutnosti vloženia základného imania na bankový účet",
+      "Všetky doklady vypracované našou advokátskou kanceláriou LegisPro, s.r.o."
+    ],
+    "closing1": "Dokumenty sú vypracované tak, aby boli nielen v súlade s právnymi predpismi ale najmä aby chránili Vaše záujmy.",
+    "closing2": "Všetky dokumenty vypracuje a celý proces zastrešuje naša advokátska kancelária."
   },
   "liquidation": {
     "seoTitle": "Likvidácia obchodných spoločností a neziskoviek",
-    "seoDescription": "Riadená likvidácia obchodných spoločností a neziskových organizácií. Pripravíme Vás na ukončenie subjektu bez zbytočného rizika.",
+    "seoDescription": "Kompletná likvidácia obchodných spoločností, neziskových organizácií a občianskych združení. Daňová optimalizácia a vymáhanie pohľadávok pod dohľadom advokátskej kancelárie.",
     "heroTitle": "Likvidácia obchodných spoločností a neziskoviek",
-    "heroDescription": "Ukončite subjekt kontrolovane. Pripravíme celý proces likvidácie a nastavíme podmienky tak, aby ste mali pokoj po právnej aj daňovej stránke.",
-    "processLabel": "Priebeh likvidácie",
-    "processHeading": "Od rozhodnutia o zrušení až po výmaz z registra",
-    "processIntro": "Likvidácia spoločnosti či neziskovej organizácie je proces s viacerými míľnikmi, ktoré majú vplyv na zodpovednosť štatutárov aj spoločníkov. Všetky kroky pripravíme a zdokumentujeme.",
-    "processItems": [
-      "Analýza majetkovej a záväzkovej situácie subjektu",
-      "Rozhodnutie spoločníkov o zrušení a vstupe do likvidácie",
-      "Ustanovenie likvidátora a notifikácia obchodného registra",
-      "Oznámenia veriteľom a finančnej správe, zverejnenia v Obchodnom vestníku",
-      "Vyporiadanie pohľadávok a záväzkov, predaj majetku a ukončenie zmlúv",
-      "Spracovanie mimoriadnej a konečnej účtovnej závierky vrátane daňového priznania",
-      "Schválenie konečnej správy likvidátora a rozdelenie likvidačného zostatku",
-      "Návrh na výmaz z obchodného registra a z evidencií daňových úradov"
+    "heroDescription": "Prevezmeme celý proces likvidácie – rýchlo, v súlade so zákonom a s maximálnou ochranou štatutárov a spoločníkov.",
+    "highlightsLabel": "Čo pre Vás zabezpečíme",
+    "highlights": [
+      "Prevezmeme celý proces",
+      "Expresná likvidácia firmy či neziskovej organizácie/občianskeho združenia",
+      "Daňová optimalizácia",
+      "Vymáhanie pohľadávok"
     ],
-    "assistanceLabel": "S čím Vám pomôžeme",
-    "assistanceItems": [
-      "Komplexné vedenie likvidácie od rozhodnutia po výmaz",
-      "Zastupovanie pred orgánmi verejnej správy a veriteľmi",
-      "Daňové a účtovné poradenstvo počas celej likvidácie",
-      "Ochrana štatutárov pred osobnou zodpovednosťou a poriadok v dokumentácii"
+    "paragraph1": "Likvidácia spoločnosti nemusí byť strašiakom. Či už ide o naplnenie podnikateľského cieľa, alebo strategické rozhodnutie o ukončení činnosti, zabezpečíme, aby celý proces prebehol v súlade s legislatívou. Prevezmeme komunikáciu s úradmi, správcom dane a postaráme sa o korektné vymazanie firmy z obchodného registra. Vy získate istotu, že za vašou minulosťou zostali len poriadne uzavreté kapitoly.",
+    "paragraph2": "Neodborné ukončenie firmy môže priniesť riziká, ktoré vás dobehnú aj po rokoch. Naša služba likvidácie spoločností sa zameriava na maximálnu ochranu štatutárov a spoločníkov. Detailne preveríme stav záväzkov, pripravíme potrebnú dokumentáciu a prevedieme vás procesom od vymenovania likvidátora až po záverečné rozdelenie likvidačného zostatku, a to vrátane daňovej optimalizácie. Neriskujte pokuty – stavte na odbornosť.",
+    "servicesLabel": "Naša služba obsahuje najmä:",
+    "services": [
+      "Posúdenie či Vám nevznikla povinnosť vyhlásiť konkurz",
+      "Príprava rozhodnutí, zápis do príslušného registra a výmaz z neho, splnenie notifikačných povinností,",
+      "Komunikácia s inštitúciami: Daňový úrad, poisťovne atď.",
+      "Príprava a optimalizácia spoločnosti pred samotným výmazom",
+      "Odborné vymáhanie pohľadávok",
+      "Účtovné a daňové služby: Zostavenie mimoriadnych závierok a daňových priznaní.",
+      "Definitívne ukončenie existencie subjektu."
     ]
   },
   "mergers": {
     "seoTitle": "Premeny a zlúčenia obchodných spoločností",
-    "seoDescription": "Premeny a zlúčenia obchodných spoločností v súlade so slovenskou a európskou legislatívou – od strategického plánu až po zápis do registra.",
+    "seoDescription": "Fúzie, rozdelenia, odštiepenia a zmeny právnej formy obchodných spoločností pod dohľadom advokátskej kancelárie LegisPro, s.r.o.",
     "heroTitle": "Premeny a zlúčenia obchodných spoločností",
-    "heroDescription": "Strategické rozhodnutia si vyžadujú čistú právnu aj daňovú realizáciu. Pripravíme fúzie, rozdelenia a zmeny právnej formy komplexne.",
-    "whyLabel": "Kedy zvažovať premenu alebo zlúčenie",
-    "whyItems": [
-      "Konsolidácia viacerých firiem v rámci jednej skupiny",
-      "Oddelenie rizikových alebo neziskových činností do samostatného subjektu",
-      "Akvizícia alebo predaj časti podniku",
-      "Zmena právnej formy (napr. z s.r.o. na a.s.)",
-      "Cezhraničné zlúčenia v rámci EÚ"
+    "heroDescription": "Komplexná príprava fúzií, rozdelení a zmien právnej formy podľa najnovšej legislatívy.",
+    "intro": "Máte viacero spoločností s rovnakým predmetom podnikania, rastiete, optimalizujete štruktúru alebo pripravujete firmu na predaj? Procesné zmeny v korporátnej štruktúre sú komplexnou operáciou, ktorá si vyžaduje precízne právne, daňové a účtovné plánovanie. Sme tu, aby sme Vás bezpečne previedli celým procesom premeny podľa najnovšej legislatívy.",
+    "typesLabel": "Aké premeny realizujeme",
+    "types": [
+      {
+        "title": "Fúzie (zlúčenia)",
+        "description": "Spojenie dvoch alebo viacerých spoločností do jedného silného celku s cieľom dosiahnuť daňovú optimalizáciu alebo znížiť náklady."
+      },
+      {
+        "title": "Rozdelenia a odštiepenia",
+        "description": "Oddelenie časti podniku do novej spoločnosti, ideálne pri diverzifikácii rizík alebo príprave na vstup investora."
+      },
+      {
+        "title": "Zmeny právnej formy"
+      }
     ],
-    "processLabel": "Ako vyzerá spolupráca",
-    "processHeading": "Transakciu pripravíme komplexne a v jednej logike",
-    "processItems": [
-      "Analýza východiskovej štruktúry a cieľa transakcie",
-      "Návrh premeny alebo zlúčenia s daňovými a účtovnými dopadmi",
-      "Due diligence zúčastnených spoločností",
-      "Príprava projektov premien alebo zlúčení a všetkých súvisiacich dokumentov",
-      "Zabezpečenie súhlasov a schválení (valné zhromaždenia, orgány dohľadu)",
-      "Komunikácia s audítormi, notármi a registrovými súdmi",
-      "Zápis premeny alebo zlúčenia do obchodného registra a následná integrácia"
-    ]
+    "servicesLabel": "Služba zahŕňa:",
+    "services": [
+      "Vypracovanie projektu premeny: Základný dokument, ktorý musí spĺňať všetky zákonné náležitosti",
+      "Audit a správa audítora: Zabezpečíme povinné preskúmanie projektu premeny nezávislým expertom",
+      "Ochrana veriteľov a spoločníkov: Nastavíme proces tak, aby prebehol hladko a bez právnych napadnutí",
+      "Komunikácia s registrom: Zabezpečíme uloženie projektu do zbierky listín a finálny zápis zmeny do príslušného registra",
+      "Celý proces zabezpečuje naša advokátska kancelária LegisPro, s.r.o."
+    ],
+    "closing": "Vďaka tomu, že ponúkame aj Preverenie tokov firmy a Optimalizáciu procesov, nie sme len „papieroví“ spracovatelia. Pred samotnou premenou analyzujeme finančné dopady a po jej skončení vám pomôžeme nastaviť procesy v novej štruktúre tak, aby bola od prvého dňa efektívna."
   },
   "contact": {
     "seoTitle": "O nás a kontakt",
     "seoDescription": "LegisPro, s.r.o. prepája financie, compliance a právo do praktických riešení. Kontaktujte nás a naplánujme si úvodnú konzultáciu.",
-    "heroTitle": "O nás a kontakt",
-    "heroDescription": "LegisPro, s.r.o. je advokátska kancelária zameraná na previazanie práva, financií a procesov. Pomáhame majiteľom, štatutárom a investorom robiť informované rozhodnutia.",
-    "missionLabel": "Naša misia",
-    "missionText": "Pomáhame klientom vidieť ich firmu ako celok. Spájame právne, daňové a procesné poznanie do jedného výstupu, ktorý je zrozumiteľný a realizovateľný.",
-    "valuesLabel": "Ako pristupujeme k spolupráci",
-    "values": [
-      "Diskrétnosť a jasná komunikácia naprieč celou spoluprácou",
-      "Kombinácia právneho, ekonomického a procesného pohľadu",
-      "Dôraz na praktickú využiteľnosť výstupov a ich obhájiteľnosť",
-      "Dlhodobá starostlivosť o klientov, nielen jednorazové projekty"
+    "heroTitle": "O nás",
+    "heroDescription": "",
+    "introLabel": "LegisPro, s.r.o., advokátska kancelária",
+    "introText1": "Sme Vaším partnerom pre integritu a rast. Našou snahou je vnášať transparentnosť tam, kde vládne neistota. Veríme, že zdravá firma nie je len tá, ktorá generuje zisk, ale tá, ktorá má čisté toky a efektívne procesy. Spájame odborné znalosti z oblasti financií, legislatívy a procesného manažmentu, aby sme vám dodali podklady pre tie najdôležitejšie rozhodnutia.",
+    "introText2": "V prípade, ak sa rozhodnete zmeniť formu podnikania, alebo podnikanie ukončiť, odborne Vás prevedieme celým procesom.",
+    "pillarsLabel": "Naše piliere",
+    "pillars": [
+      {
+        "title": "Diskrétnosť",
+        "description": "Vaše dáta sú u nás v absolútnom bezpečí"
+      },
+      {
+        "title": "Objektivita",
+        "description": "Neprikrášľujeme realitu, hovoríme fakty"
+      },
+      {
+        "title": "Praktickosť",
+        "description": "Nedávame len reporty, prinášame riešenia, ktoré fungujú v praxi"
+      },
+      {
+        "title": "Odbornosť",
+        "description": "Všetky služby zabezpečuje naša advokátska kancelária"
+      }
     ],
     "contactLabel": "Kontakt",
     "formTitle": "Dohodnúť stretnutie",
@@ -303,5 +331,45 @@
       "success": "Ďakujeme, ozveme sa Vám čo najskôr.",
       "error": "Nepodarilo sa odoslať formulár. Skúste to prosím znova."
     }
+  },
+  "crossSell": {
+    "allServices": "Pozrite si celé portfólio služieb na legispro.sk",
+    "services": {
+      "criminal": "Trestné právo",
+      "litigation": "Sporové zastupovanie",
+      "commercial": "Obchodné právo",
+      "financial": "Daňové a finančné právo",
+      "dueDiligence": "Due diligence",
+      "gdpr": "GDPR",
+      "ecommerce": "e-Commerce",
+      "startups": "Start-up & Greenfield projekty"
+    },
+    "pages": {
+      "audit": {
+        "heading": "Preverenie odhalilo trestný čin alebo spor?",
+        "description": "Ak audit prinesie zistenia, ktoré je nutné riešiť súdnou alebo trestnou cestou, plynule prevezmeme Vaše zastupovanie v rámci sesterskej advokátskej kancelárie LegisPro."
+      },
+      "formation": {
+        "heading": "Potrebujete právny servis aj po založení?",
+        "description": "Zmluvy, GDPR, e-shop, start-up a greenfield projekty – všetky tieto oblasti zastrešuje LegisPro, s.r.o. ako plnohodnotná advokátska kancelária."
+      },
+      "liquidation": {
+        "heading": "Vymáhanie pohľadávok a súdne spory",
+        "description": "Pred likvidáciou často treba vyriešiť nezaplatené pohľadávky alebo obchodné spory. Pre tieto oblasti využite našu sesterskú kanceláriu LegisPro."
+      },
+      "mergers": {
+        "heading": "Due diligence a daňové posúdenie",
+        "description": "Pred akvizíciou alebo premenou odporúčame hĺbkovú právnu a daňovú analýzu. Obe služby poskytuje sesterská kancelária LegisPro."
+      },
+      "contact": {
+        "heading": "Hľadáte širší právny servis?",
+        "description": "Okrem preverenia firiem poskytujeme ako LegisPro, s.r.o. kompletné advokátske služby – od trestného práva cez obchodné právo až po GDPR a sporové zastupovanie."
+      }
+    }
+  },
+  "privacy": {
+    "title": "Ochrana osobných údajov",
+    "subtitle": "Vyhlásenie o ochrane osobných údajov a podmienkach ich spracúvania",
+    "content": "<p><strong>vydané advokátskou kanceláriou LegisPro, s.r.o.</strong></p><h3>Identifikácia prevádzkovateľa</h3><p>Prevádzkovateľom spracúvania Vašich osobných údajov je advokátska kancelária LegisPro, s.r.o., IČO: 56709901, so sídlom Sládkovičova 1, 949 01 Nitra, spoločnosť zapísaná v obchodnom registri Okresného súdu Nitra, oddiel Sro, vl. č. 64948/N (v ďalšom texte aj ako „LegisPro\", alebo „My\" v príslušnom gramatickom tvare).</p><p>Vo veciach týjacich sa spracúvania a ochrany osobných údajov nás môžete kontaktovať na adrese LegisPro, s.r.o., advokátska kancelária, Sládkovičova 1, 949 01 Nitra alebo e-mailom na e-mailovú adresu dpo@legispro.sk.</p><p>Týmto vyhlásením Vás informujeme o podmienkach a zásadách ochrany Vašich osobných údajov, ktoré od Vás získavame prostredníctvom našej interakcie s Vami, konkrétne o tom ako a aké Vaše osobné údaje získavame, ako tieto osobné údaje spracúvame a aké sú Vaše práva v súvislosti so spracúvaním Vašich osobných údajov.</p><p>LegisPro ako prevádzkovateľ berie ochranu Vašich osobných údajov veľmi vážne. Pri ich ochrane postupujeme starostlivo podľa platnej právnej úpravy, najmä podľa Nariadenia Európskeho parlamentu a Rady Európskej Únie 2016/679 o ochrane fyzických osôb pri spracúvaní osobných údajov a o voľnom pohybe takýchto údajov, ktorým sa zrušuje smernica 95/46/ES (ďalej ako „nariadenie\") zákona č. 18/2018 Z. z. o ochrane osobných údajov a o zmene a doplnení niektorých zákonov, ako aj zákona č. 586/2003 Z.z. o advokácií a o zmene a doplnení zákona č. 455/1991 Zb. o živnostenskom podnikaní (živnostenský zákon) v znení neskorších predpisov a ostatných platných právnych predpisov (ďalej aj ako \"zákon o advokácii\"). Okrem uvedeného zákonného rámca postupujeme pri ochrane Vašich osobných údajov aj podľa Kódexu správania pre spracúvanie osobných údajov advokátmi, ktorý bol prijatý Slovenskou advokátskou komorou a ktorý je záväzný pre každého advokáta a advokátsku kanceláriu. Znenie tohto kódexu môžete nájsť na webovej stránke Slovenskej advokátskou komory tu: <a href=\"https://www.sak.sk\" target=\"_blank\">https://www.sak.sk</a>.</p><h3>Prečo spracúvame Vaše osobné údaje?</h3><p>Jedným z našich hlavných cieľov je poskytovať Vám – našim klientom kvalitné právne služby v rámci výkonu advokátskeho povolania. Toto si vyžaduje úzku spoluprácu medzi nami a Vami a vysoký stupeň dôvery. Vaše osobné údaje spracúvame pre dosiahnutie tohto cieľa, aby sme Vám mohli poskytovať širokospektrálne a jedinečné služby v právnej oblasti, napr. vypracovať návrhy riešení rôznych situácií, zastupovať Vás pri riešení sporov, uzatváraní dohôd či pomôcť Vám v rozličných právnych prípadoch. V rámci týchto procesov musíme plniť zákonné, zmluvné či iné povinnosti. Našou snahou je vždy a v najväčšej možnej miere chrániť Vás a Vaše záujmy.</p><h3>Čo vlastne osobný údaj znamená?</h3><p>Vašim osobným údajom je akákoľvek informácia alebo znak, na základe ktorej/ktorého Vás vieme či môžeme identifikovať. Nezáleží pritom či ide o identifikáciu priamu alebo nepriamu. Identifikačnou informáciou môže byť určitý všeobecný identifikátor akým je napríklad meno, priezvisko, dátum narodenia, rodné číslo či on-line identifikátor. Identifikačným znakom môže byť určitá Vaša fyziologická, genetická, ale aj psychická či kultúrna charakteristika či črta, ktorá je pre Vás typická. Osobným údajom môžu byť aj informácie o Vašich preferenciách, napr. spotrebiteľských či záujmových, vzťahujúcosich na Vašu osobu.</p><h3>Ako Vaše údaje získavame?</h3><p>Úvodom k tejto časti si Vás dovoľujeme informovať, že v zmysle príslušných ustanovení § 18 zákona o advokácií advokát (advokátska kancelária):</p><ul><li>spracúva osobné údaje klientov a iných fyzických osôb v rozsahu nevyhnutnom na účely výkonu advokácie a pri spracúvaní osobných údajov na účely súvisiace s poskytovaním právnych služieb má vždy postavenie prevádzkovateľa spracúvania podľa čl. 4 ods. 7,</li><li>je oprávnený získavať a spracúvať osobné údaje nevyhnutné na účely výkonu advokácie kopírovaním, skenovaním alebo iným zaznamenávaním úradných dokladov na nosič informácií bez súhlasu dotknutej osoby,</li><li>nemá povinnosť poskytnúť informácie o spracúvaní osobných údajov, umožniť prístup alebo prenosnosť osobných údajov podľa osobitného predpisu, ak by to mohlo viesť k porušeniu povinnosti advokáta zachovávať mlčanlivosť podľa zákona o advokácií (a v takom prípade Vás o spracúvaní Vašich osobných údajov informovať nebudeme).</li></ul><h4>Ak ste naším klientom</h4><p>Ak ste naším klientom, získavame Vaše osobné údaje predovšetkým od Vás. Poskytnutie Vašich osobných údajov je úplne dobrovoľné, avšak v niektorých prípadoch je nevyhnutné na to, aby sme Vám mohli poskytovať právne služby v súlade so zákonom o advokácii v znení neskorších predpisov. Vo výnimočných prípadoch môže neposkytnutie Vašich osobných údajov viesť k odmietnutiu poskytovania právnych služieb.</p><p>V niektorých prípadoch získavame Vaše osobné údaje aj z iných zdrojov ako od Vás, a to napríklad od orgánov verejnej moci, z verejne dostupných zdrojov, prípadne od iných osôb.</p><h4>Ako Vaše osobné údaje získavame v prípade, ak nie ste naším klientom?</h4><p>V prípade, ak nie ste naším klientom, získavame Vaše osobné údaje zväčša priamo od našich klientov, z verejných zdrojov alebo od orgánov verejnej moci (napr. ak ste protistranou v konaní). V uvedenom prípade môžeme získavať Vaše osobné údaje aj proti Vašej vôli (a to na základe zákonného oprávnenia a povinnosti vykonávať advokáciu a poskytovať právne služby v súlade so Zákonom o advokácii).</p><p>Vaše osobné údaje získavame aj z Vašich návštev našej webovej stránky www.legispro.sk. K zberu Vašich osobných údajov dochádza aj vyplnením kontaktného formulára na našom webe a to v rozsahu meno, priezvisko, e-mailová adresa a osobné údaje obsiahnuté v správe.</p><h3>Na aké účely spracúvame Vaše osobné údaje?</h3><p>Vaše osobné údaje spracúvame najmä pre nasledovné účely:</p><div class=\"gdpr-table\"><table><tr><th>Účel</th><th>Právny základ</th><th>Popis</th></tr><tr><td>realizácia výberového konania<br>uzatváranie a plnenie zmlúv o poskytovaní právnych služieb s klientmi<br>uzatváranie a plnenie zmlúv s dodávateľmi tovarov a služieb<br>organizácia webinárov, seminárov a školení</td><td>plnenie zmluvných povinností podľa čl. 6 ods. (1) písm. b) nariadenia, vrátane výkonu predzmluvných vzťahov</td><td>Za týmto účelom spracúvame Vaše osobné údaje, ak ste s nami uzatvorili zmluvu, alebo aby sme na základe Vašich požiadaviek mohli vykonať opatrenia pred uzatvorením zmluvy (predzmluvné vzťahy). Prevažne pôjde o zmluvu o poskytovaní právnych služieb alebo zmluvu o spolupráci.</td></tr><tr><td>spracovanie účtovných dokladov<br>evidencia a vybavovanie prijatej a odoslanej pošty (vrátane elektronickej schránky)<br>vedenie knihy odoslanej a prijatej pošty<br>príprava ponuky právnych služieb na žiadosť klienta<br>zastupovanie klientov v konaniach pred súdmi, orgánmi verejnej moci a inými subjektmi<br>obhajoba v trestnom konaní<br>poskytovanie právnych rád klientom<br>vypracovanie právnych stanovísk a analýz<br>spisovanie listín o právnych úkonoch<br>komunikácia s klientmi a inými fyzickými osobami týkajúca sa výkonu advokácie alebo zmluvného vzťahu s klientom<br>vyhľadávanie dôkazov v prospech klienta<br>zisťovanie totožnosti dotknutých osôb prostredníctvom svedkov, vyjadrení alebo iných listinných dôkazov<br>autorizácia zmlúv vrátane vyhľadávania informácií o osobách, ktorým by uzavretím zmluvy by mohla vzniknúť škoda<br>vykonávanie konverzie a zaručenej konverzie<br>evidencia času, úkonov a poskytnutého poradenstva klientovi<br>vedenie spisovej agendy advokáta, vrátane administratívnych činnosti súvisiacich s poskytovaním právnych a iných služieb<br>plnenie povinností pri ochrane pred legalizáciou príjmov z trestnej činnosti (identifikácia podozrivých operácií)<br>vybavovanie reklamácií<br>vybavovanie uplatnených práv dotknutých osôb</td><td>plnenie zákonných povinností podľa čl. 6 ods. (1) písm. c) nariadenia</td><td>V určitých prípadoch sme povinní spracúvať Vaše osobné údaje aj pri plnení našich zákonných povinností. Takéto povinnosti nám vyplývajú najmä z predpisov o účtovníctve, daňových predpisov a zo zákona o advokácii a s ním súvisiacich predpisov.</td></tr><tr><td>evidencia zmlúv, klientov a obchodných partnerov. Oprávneným záujmom je evidencia zmlúv z dôvodu vedenia prehľadu o uzatvorených zmluvách, pre potreby vedenia účtovníctva, zabezpečenie vnútornej kontrolnej činnosti a pre vymáhanie nárokov vyplývajúcich zo zmlúv.<br><br>vedenie ostatnej obchodnej komunikácie (okrem komunikácie s klientmi týkajúcej sa výkonu advokácie alebo plnenia zmluvného vzťahu). Oprávneným záujmom je vedenie obchodnej komunikácie s našimi dodávateľmi a klientmi v záujme zabezpečenia plnenia našich zmluvných povinností, riadneho výkonu našej činnosti či informovania dotknutých osôb konajúcich na našich strane obchodných partnerov.<br><br>evidencia uplatnených práv dotknutých osôb. Oprávneným záujmom je evidovanie uplatnených práv dotknutých osôb z dôvodu preukázania plnenia povinností vyplývajúcich z právnych predpisov.<br><br>Posielanie reklamných a marketingových oznámení klientom a bývalým klientom v prípadoch, kedy to príslušné právne predpisy na základe oprávneného záujmu umožňujú. Oprávneným záujmom je záujem na zviditeľnení našej advokátskej kancelárie a našej práce.</td><td>oprávnený záujem podľa čl. 6 ods. (1) písm. f) nariadenia, ktorý je špecifikovaný pri každom účele osobitne</td><td>Vaše osobné údaje spracúvame aj na účely našich oprávnených záujmov, výlučne v prípadoch, ak je spracúvanie nevyhnutné na sledovanie našich oprávnených záujmov alebo oprávnených záujmov tretej strany. Podmienkou však je, že nad týmito záujmami neprevažujú Vaše záujmy alebo Vaše základné práva a slobody.</td></tr><tr><td>prieskum trhu a marketing<br>štatistické meranie návštevnosti webovej stránky a online marketing</td><td>súhlas podľa čl. 6 ods. (1) písm. a) nariadenia udelený dotknutou osobou, ktorý je dotknutá osoba oprávnená kedykoľvek odvolať</td><td>V týchto prípadoch spracúvame Vaše osobné údaje na základe Vášho slobodne udeleného súhlasu.</td></tr></table></div><h3>Komu Vaše osobné údaje sprístupňujeme?</h3><p>Vaše osobné údaje môžeme pre dosiahnutie vyššie uvedených účelov poskytnúť v minimálne nevyhnutnom rozsahu aj našim sprostredkovateľom, ktorými sú externé subjekty spracúvajúce Vaše osobné údaje v našom mene. Dbáme na to, aby sprostredkovatelia chránili Vaše osobné údaje prostredníctvom prijatia primeraných technických a bezpečnostných opatrení pred neoprávneným použitím, náhodnou stratou, výmazom či poškodením. Medzi sprostredkovateľov patria spoločnosť zabezpečujúca účtovníctvo, mzdy a personalistiku, spoločnosti poskytujúce reklamné, marketingové služby a spravujúce webovú stránku a sociálne média, spoločnosti poskytujúce hostingové služby.</p><p>Okrem uvedených spoločností môžeme sprístupňovať Vaše osobné údaje aj našim spolupracujúcim advokátom, notárom, znalcom, ekonomickým poradcom či orgánom verejnej správy.</p><p>V niektorých prípadoch je príjemcom Vašich osobných údajov aj spoločnosť Google, LLC, ktorá je materskou spoločnosťou európskeho poskytovateľa online služieb využívajúcich súbory cookies, ktoré naša webová stránka na základe Vášho súhlasu ukladá do Vášho zariadenia a materské spoločnosti európskych prevádzkovateľov sociálnych sietí – spoločnosť Meta, Inc., ktorá je materskou spoločnosťou európskeho prevádzkovateľa sociálnej siete Facebook a spoločnosti LinkedIn Corporation, ktorá je materskou spoločnosťou európskeho prevádzkovateľa sociálnej siete LinkedIn, v prípade, ak nás kontaktujete prostredníctvom sociálnej siete.</p><p>S Vašimi osobnými údajmi nikdy neobchodujeme a starostlivo zvažujeme každé ich sprístupnenie, vždy v súlade so zákonom. Zároveň, v prípade, ak dochádza k prenosu Vašich osobných údajov, tento je starostlivo zabezpečený prostredníctvom primeraných prostriedkov zabezpečenia v súlade s príslušnými prostriedkami zabezpečenia, najmä prostredníctvom používania štandardných zmluvných doložiek.</p><h3>Aké kategórie osobných údajov spracúvame a v akom rozsahu?</h3><p>Vaše osobné údaje spracúvame v rozsahu, ktorý je minimálne potrebný pre plnenie našich záväzkov alebo sledovanie našich oprávnených záujmov voči Vám a vždy v rámci daného účelu. Vaše osobné údaje, ktoré nie sú potrebné pre dosiahnutie daného účelu od Vás nevyžadujeme. Vaše osobné údaje spracúvame v rozsahu: meno, priezvisko, adresa trvalého pobytu, dátum narodenia, e-mailová adresa a telefónne číslo. Pokiaľ si to povaha veci pre dosiahnutie konkrétneho účelu vyžaduje, môžeme spracúvať aj údaje o druhu a čísle Vášho dokladu totožnosti, Vaše rodné číslo a iné osobné údaje.</p><p>V určitých špecifických prípadoch môžeme v rámci výkonu advokácie spracúvať aj osobitné kategórie osobných údajov, napr. informácie o zdravotnom stave či inom osobnom stave, vždy len v minimálnom rozsahu a pre daný účel.</p><p>V rámci výkonu povolania advokáta máme zákonné oprávnenie získavať a spracúvať Vaše osobné údaje nevyhnutné na účely výkonu advokácie kopírovaním, skenovaním alebo iným zaznamenávaním úradných dokladov na nosič informácií, a to aj bez Vášho súhlasu.</p><h3>Ako dlho uchovávame Vaše osobné údaje?</h3><p>Vaše osobné údaje uchovávame vo forme, ktorá umožňuje Vašu identifikáciu najneskôr dovtedy, kým je to potrebné na účel, na ktorý sa osobné údaje spracúvajú. Po dosiahnutí tohto účelu Vaše údaje bezodkladne vymažeme. Osobné údaje môžeme uchovávať dlhšie, ak sa majú spracúvať výlučne na účel archivácie, na vedecký účel, na účel historického výskumu alebo na štatistický účel pre účely splnenia zákonných povinností. Počas celej doby uchovávania Vašich osobných údajov dbáme o ich ochranu.</p><p>Pri uchovávaní Vašich osobných údajov postupujeme podľa Uznesenia predsedníctva Slovenskej advokátskej komory číslo 29/11/2011, ktoré ustanovuje odporúčanú dobu uchovávania spisovej agendy advokátskej kancelárie a súvisiacich dokumentov, a teda aj spracúvaných osobných údajov, napr.:</p><ul><li>knihu došlej pošty a knihu odoslanej pošty po jej zaplnení uschováva advokát počas desiatich rokov od dátumu prijatia alebo odoslania poslednej zásielky zapísanej v knihe;</li><li>inventárny zoznam archivuje advokát počas desiatich rokov od jeho spísania;</li><li>ak advokát vedie menoslov klientov a protokol klientskeho spisu elektronicky, ku koncu kalendárneho roka vyhotoví za kalendárny rok jeho tlačenú formu a túto uloží v kancelárii bez časového obmedzenia;</li><li>skartačná lehota klientskeho spisu je 10 rokov a plynie odo dňa, keď sú splnené všetky podmienky na uloženie spisu do archívu.</li></ul><p>Podľa rovnakého uznesenia nemôžeme vôbec vymazať klientský spis, ak sa v ňom nachádzajú originály listín, ktoré ste nám odovzdali. Nemôžeme tiež skartovať a/alebo iným spôsobom zlikvidovať nasledujúce dokumenty:</p><ul><li>klientsky spis, v ktorom sa nachádzajú originály listín odovzdaných advokátovi klientom;</li><li>protokoly klientskych spisov a menoslov klientskych spisov;</li><li>klientsky spis alebo jeho časť, ktorú je advokát povinný odovzdať štátnemu archívu;</li></ul><p>Skartovať nie je možné klientsky spis, pokiaľ je vedené akékoľvek konanie pred súdom, orgánom štátnej správy, orgánmi činnými v trestnom konaní, Slovenskou advokátskou komorou, ktoré obsahovo súvisí s obsahom klientskeho spisu, alebo predmetom ktorého bolo konanie alebo opomenutie advokáta pri poskytovaní právnej pomoci vo veci klientovi. Okrem uvedeného spracúvame osobné údaje po dobu stanovenú na základe rôznych kritérií nasledovne:</p><ul><li>počas doby stanovenej všeobecne záväznými právnymi predpismi, v prípade, keď spracúvame Vaše osobné údaje pri plnení našich zákonných povinností,</li><li>počas doby trvania zmluvného vzťahu, resp. doby trvania predzmluvných opatrení, v prípade, keď spracúvame Vaše osobné údaje na základe plnenia zmluvy alebo predzmluvných opatrení,</li><li>počas doby trvania nášho oprávneného záujmu, v prípade, keď je spracúvanie osobných údajov vykonávané na účely našich oprávnených záujmov alebo oprávnených záujmov tretej strany,</li><li>počas doby udeleného súhlasu na spracúvanie Vašich osobných údajov, v prípade, ak spracúvame Vašej osobné údaje na základe súhlasu dotknutej osoby.</li></ul><p>Ako dotknutá osoba nás môžete kedykoľvek osloviť s požiadavkou o uvedenie konkrétnej lehoty spracúvania Vašich osobných údajov.</p><h3>Využívame pri spracúvaní Vašich osobných údajov automatizované individuálne rozhodovanie a profilovanie?</h3><p>Pri spracúvaní Vašich osobných údajov nevyužívame žiadne automatizované individuelde rozhodovanie či profilovanie, ktorými by dochádzalo k spracúvaniu Vašich osobných údajov použitím osobných údajov na vyhodnotenie určitých Vašich osobných znakov, alebo charakteristík.</p><h3>Do ktorých krajín prenášame Vaše osobné údaje</h3><p>Vaše osobné údaje môžeme prenášať aj do krajín mimo Európskeho hospodárskeho priestoru a to za účelom našej prezentácie a reklamy, na ktorú využívame služby spoločností Google, LLC, Meta, Inc. a LinkedIn Corporation.</p><h3>Aké sú Vaše práva?</h3><p>Vašimi zákonnými právami a naopak našimi povinnosťami sú:</p><ul><li><strong>Právo na prístup k informáciám</strong>: na základe Vašej žiadosti Vám vydáme potvrdenie o tom, či spracúvame Vaše osobné údaje. Pokiaľ Vaše osobné údaje spracúvame, máte právo na ich sprístupnenie, pričom Vám ich sprístupnime Vami požadovanou formou. Máte právo získať informácie o účele a právnom základe spracúvania Vašich osobných údajov, ďalej o kategórii, príjemcoch a dobe ich uchovávania.</li><li><strong>Právo na opravu</strong>: Vaše osobné údaje opravíme alebo doplníme Vaše neúplné osobné údaje, a to bezodkladne po tom, ako sa dozvieme o ich nesprávnosti alebo neúplnosti. Vaše osobné údaje udržujeme vždy aktuálne a presné.</li><li><strong>Právo na vymazanie, resp. „právo byť zabudnutý\"</strong>: Na základe Vašej žiadosti, alebo pre splnenie zákonných povinností vymažeme Vaše osobné údaje bez zbytočného odkladu. Môže ísť napríklad o prípady keď je spracúvanie Vašich osobných údajov v rozpore so zákonnými zásadami ich spracúvania, alebo je výmaz osobných údajov nevyhnutný na účel splnenia zákonných povinností, alebo medzinárodnej zmluvy, ktorou je Slovenská republika viazaná. V určitých zákonných prípadoch nemôžeme pristúpiť k výmazu Vašich osobných údajov okamžite, nakoľko musíme rešpektovať minimálne zákonné lehoty ich uchovávania, alebo nemôžeme Vaše osobné údaje vymazať vôbec, viď časť tohto dokumentu týkajúca sa dĺžky uchovávania.</li><li><strong>Právo na obmedzenie spracúvania</strong>: V prípade, ak zistíte, že nami spracúvané Vaše osobné údaje nie sú správne, obmedzíme na základe Vášho podnetu ich spracúvanie. Spracúvanie obmedzíme aj v prípade, kedy je takéto spracúvanie protizákonné, namietate proti vymazaniu Vašich osobných údajov a žiadate namiesto ich výmazu obmedzenie ich použitia. V prípade, že Vaše osobné údaje už nepotrebujeme, ale sú pre Vás potrebné na uplatňovanie Vašich právnych nárokov, obmedzíme, na základe Vášho podnetu, ich spracúvanie. Pokiaľ si uplatníte právo namietať, budeme tiež Vaše osobné údaje spracúvať iba obmedzene. V uvedených prípadoch budeme Vaše osobné údaje len uchovávať alebo spracúvať len s Vašich súhlasom, alebo na preukazovanie, uplatňovanie a obhajovanie právnych nárokov, alebo na ochranu práv iných osôb, alebo z dôvodov dôležitého verejného záujmu.</li><li><strong>Právo na prenositeľnosť údajov</strong>: ak Vaše osobné údaje spracúvame na základe Vami udeleného súhlasu, alebo je ich spracúvanie nevyhnutné na plnenie zmluvy, ktorou ste viazaní, Vaše osobné údaje Vám na základe Vašej žiadosti poskytneme v bežne používanom, štruktúrovanom formáte. Pokiaľ je to technicky možné, máte právo preniesť takto zaznamenané Vaše osobné údaje inému prevádzkovateľovi.</li><li><strong>Právo vzniesť námietku</strong>: ak Vaše osobné údaje spracúvame na základe oprávneného záujmu, máte právo vzniesť voči takémuto spracúvaniu námietku. V prípade, ak namietate voči spracúvaniu na účely priameho marketingu, Vaše údaje už nebudeme spracúvať.</li><li><strong>Právo odvolať súhlas</strong>: Váš súhlas so spracovaním Vašich osobných údajov, ktorý ste nám udelili môžete kedykoľvek odvolať. Po prijatí odvolania udeleného súhlasu nebudeme Vaše osobné údaje ďalej spracúvať.</li><li><strong>Právo podať sťažnosť alebo podnet na Úrad na ochranu osobných údajov</strong>: v prípade, ak máte podozrenie, že došlo k neoprávnenému nakladaniu s Vašimi osobnými údajmi alebo sú Vaše osobné údaje v nebezpečí môžete sa obrátiť na dozorný orgán, ktorým je Úrad na ochranu osobných údajov Slovenskej republiky, so sídlom Hraničná 12, 820 07 Bratislava 27.</li></ul><p>Vaše práva si môžete uplatniť zaslaním písomnej žiadosti na adresu sídla našej spoločnosti alebo prostredníctvom nižšie uvedenej e-mailovej adresy. Vašu žiadosť posúdime a vybavíme v lehote jedného mesiaca od jej prijatia. V špecifických prípadoch, napr. pri veľkom počet žiadostí, alebo ich obsahovej náročnosti, sme oprávnení túto lehotu predĺžiť, najviac o dva mesiace. O predĺžení lehoty Vás budeme písomne informovať.</p><h3>Chránime Vaše súkromie</h3><p>Je pre nás dôležité, aby boli Vaše osobné údaje v bezpečí. Pre ich ochranu používame rôzne antivírové programy a viacúrovňový firewall. Naše webové stránky používajú zabezpečený protokol https://. Na druhej nepodceňujeme ani ľudský faktor. Naši zamestnanci, či sprostredkovatelia, ktorí prichádzajú do styku s Vašimi osobnými údajmi sú poučení o zásadách spracovania Vašich údajov, majú povinnosť zachovávať mlčanlivosť a sú pravidelne školení. Elektronické dokumenty obsahujúce Vaše osobné údaje sú, po nevyhnutnú dobu ich uchovávania, chránené silnými heslami. Pokiaľ je nutné, aby sme niektoré dokumenty uchovávali v ich fyzickej forme, tieto sú uložené v zabezpečených úložných priestoroch, bez možnosti prístupu tretích osôb.</p><h3>Zmeny podmienok ochrany a spracúvania osobných údajov</h3><p>Tieto podmienky nadobúdajú platnosť a účinnosť dňa 01.01.2025.</p><p>Podmienky ochrany osobných údajov sa môžu dynamicky meniť, pričom My sme na tieto zmeny pripravení. Snažíme sa Vám vždy poskytovať aktuálne informácie z tejto oblasti, nakoľko oblasť ochrany Vašich osobných údajov je pre nás dôležitá. Preto si vyhradzujeme právo aktualizovať tieto podmienky, aby boli vždy v súlade s aktuálnou právnou úpravou. V prípade ich aktualizácie Vám túto skutočnosť oznámime prostredníctvom našej webovej stránky.</p><h3>Kontaktuje nás</h3><p>V prípade akýchkoľvek otázok z oblasti ochrany a spracúvania osobných údajov sa na nás môžete obrátiť na vyššie uvedených kontaktných adresách.</p>"
   }
 }

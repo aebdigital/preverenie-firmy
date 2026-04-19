@@ -81,3 +81,93 @@ p {
     transform: none;
   }
 }
+
+.legal-prose {
+  color: rgba(5, 5, 5, 0.82);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.legal-prose h3 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #050505;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.legal-prose h4 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #050505;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.legal-prose p {
+  margin-bottom: 1rem;
+}
+
+.legal-prose ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.legal-prose li::marker {
+  color: rgba(5, 5, 5, 0.4);
+}
+
+.legal-prose strong {
+  color: #050505;
+  font-weight: 600;
+}
+
+.legal-prose a {
+  color: var(--accent-blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-prose a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.legal-prose .gdpr-table {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-radius: 1rem;
+  border: 1px solid rgba(5, 5, 5, 0.08);
+}
+
+.legal-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.legal-prose th {
+  background: #f6f6f4;
+  text-align: left;
+  font-weight: 600;
+  color: #050505;
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid rgba(5, 5, 5, 0.08);
+}
+
+.legal-prose td {
+  vertical-align: top;
+  padding: 0.875rem 1rem;
+  border-top: 1px solid rgba(5, 5, 5, 0.06);
+}
+
+.legal-prose tr:nth-child(even) td {
+  background: rgba(246, 246, 244, 0.5);
+}

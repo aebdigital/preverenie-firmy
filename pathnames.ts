@@ -21,6 +21,10 @@ export const pathnames: Record<string, Record<Locale, string>> = {
   "/o-nas-a-kontakt": {
     sk: "/o-nas-a-kontakt",
     en: "/about-and-contact"
+  },
+  "/ochrana-osobnych-udajov": {
+    sk: "/ochrana-osobnych-udajov",
+    en: "/privacy-policy"
   }
 };
 

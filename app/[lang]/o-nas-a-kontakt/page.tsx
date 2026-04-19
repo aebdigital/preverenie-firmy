@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/contact-form";
+import { CrossSellCard } from "@/components/cross-sell-card";
 import { PageHero } from "@/components/page-hero";
-import { ContactCards } from "@/components/site-primitives";
 import { contactDetails } from "@/lib/site-content";
 import { getDictionary } from "@/get-dictionary";
 import { i18n, type Locale } from "@/i18n-config";
@@ -57,46 +57,51 @@ export default async function ContactPage({
         imageSrc="/images/contact-office.jpg"
         imageAlt={t.heroTitle}
         titleClassName="text-4xl sm:text-5xl"
-      />
+      >
+        <div className="space-y-4">
+          <h2 className="text-xl font-semibold text-black sm:text-2xl">
+            {t.introLabel}
+          </h2>
+          <p className="text-base leading-8 text-black/75">{t.introText1}</p>
+          <p className="text-base leading-8 text-black/75">{t.introText2}</p>
+        </div>
+      </PageHero>
 
-      <section className="mx-auto max-w-7xl space-y-10 px-5 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr]">
-          <div className="space-y-6">
-            <div className="space-y-4 rounded-[1.8rem] border border-black/8 bg-neutral-50 p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-                {t.missionLabel}
-              </p>
-              <p className="text-base leading-8 text-black/75">{t.missionText}</p>
-            </div>
+      <section className="mx-auto max-w-7xl space-y-10 px-5 pb-16 pt-2 sm:px-6 lg:px-8">
 
-            <div className="rounded-[1.8rem] border border-black/8 bg-white p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-                {t.valuesLabel}
-              </p>
-              <div className="mt-4 space-y-3">
-                {t.values.map((v) => (
-                  <p key={v} className="text-sm leading-7 text-black/75">
-                    {v}
-                  </p>
-                ))}
+        <div className="space-y-4">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+            {t.pillarsLabel}
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {t.pillars.map((p) => (
+              <div
+                key={p.title}
+                className="rounded-[1.2rem] border border-black/8 bg-neutral-50 p-4"
+              >
+                <h3 className="text-base font-semibold text-black">{p.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-black/70">{p.description}</p>
               </div>
-            </div>
-
-            <ContactCards />
+            ))}
           </div>
+        </div>
 
-          <div id="formular" className="space-y-6 scroll-mt-32">
-            <div className="rounded-[1.9rem] border border-black/10 bg-white p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-                {t.contactLabel}
-              </p>
-              <div className="mt-4 space-y-3 text-sm leading-7 text-black/72">
+        <div id="formular" className="grid gap-6 scroll-mt-32 lg:grid-cols-2">
+          <div className="space-y-6">
+            <div className="space-y-3">
+              <h2 className="text-2xl font-semibold text-black sm:text-3xl">{t.contactLabel}</h2>
+              <div className="space-y-3 text-sm leading-7 text-black/72">
                 <p>
-                  <strong>E-mail:</strong> {contactDetails.email}
+                  <strong>E-mail:</strong>{" "}
+                  <a href={contactDetails.emailHref} className="hover:text-black">
+                    {contactDetails.email}
+                  </a>
                 </p>
                 <p>
                   <strong>{locale === "en" ? "Phone" : "Telefón"}:</strong>{" "}
-                  {contactDetails.phone}
+                  <a href={contactDetails.phoneHref} className="hover:text-black">
+                    {contactDetails.phone}
+                  </a>
                 </p>
                 <p>
                   <strong>{locale === "en" ? "Address" : "Adresa"}:</strong>{" "}
@@ -105,16 +110,31 @@ export default async function ContactPage({
               </div>
             </div>
 
-            <div className="rounded-[1.9rem] border border-black/10 bg-neutral-50 p-6 sm:p-8">
-              <div className="mb-6 space-y-3">
-                <h2 className="text-2xl font-semibold text-black sm:text-3xl">
-                  {t.formTitle}
-                </h2>
-              </div>
-              <ContactForm labels={t.form} />
+            <div className="overflow-hidden rounded-[1.8rem] border border-black/8">
+              <iframe
+                src="https://www.google.com/maps?q=LegisPro+s.r.o.,+Sl%C3%A1dkovi%C4%8Dova+1,+949+01+Nitra&output=embed"
+                title={t.heroTitle}
+                width="100%"
+                height="420"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="block w-full border-0"
+                allowFullScreen
+              />
             </div>
           </div>
+
+          <div className="rounded-[1.9rem] border border-black/10 bg-neutral-50 p-6 sm:p-8">
+            <div className="mb-6 space-y-3">
+              <h2 className="text-2xl font-semibold text-black sm:text-3xl">
+                {t.formTitle}
+              </h2>
+            </div>
+            <ContactForm labels={t.form} />
+          </div>
         </div>
+
+        <CrossSellCard pageKey="contact" locale={locale} dictionary={dict} />
       </section>
     </>
   );

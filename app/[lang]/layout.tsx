@@ -123,7 +123,13 @@ export default async function LangLayout({
       addressCountry: "SK"
     },
     areaServed: { "@type": "Country", name: "Slovakia" },
-    openingHours: "Mo-Fr 08:00-17:00"
+    openingHours: "Mo-Fr 08:00-17:00",
+    sameAs: ["https://legispro.sk"],
+    parentOrganization: {
+      "@type": "LegalService",
+      name: "LegisPro, s.r.o.",
+      url: "https://legispro.sk"
+    }
   };
 
   return (

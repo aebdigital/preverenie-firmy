@@ -76,12 +76,6 @@ export function SiteHeader({
 
         <div className="flex items-center gap-3">
           <LanguageSwitcher currentLang={lang} />
-          <Link
-            href={getLocalizedPath("/o-nas-a-kontakt", lang) + "#formular"}
-            className="hidden h-11 items-center justify-center rounded-full bg-black px-5 text-sm font-semibold text-white transition hover:bg-black/90 sm:inline-flex"
-          >
-            {dictionary.nav.contactCta}
-          </Link>
         </div>
       </div>
 
@@ -136,7 +130,7 @@ function LanguageSwitcher({ currentLang }: { currentLang: Locale }) {
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="inline-flex h-10 items-center gap-1 rounded-full border border-black/12 bg-white px-3 text-xs font-semibold text-black/75 transition hover:border-black/25 hover:text-black"
+        className="inline-flex h-11 items-center gap-1 rounded-full bg-black px-5 text-sm font-semibold text-white transition hover:bg-black/90"
       >
         {labels[currentLang]}
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none">

@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { CookieConsent } from "@/components/cookie-consent";
 import { FadeInUpScope } from "@/components/fade-in-up-scope";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -23,6 +24,7 @@ export function SiteShell({
       <FadeInUpScope>
         <SiteFooter lang={lang} dictionary={dictionary} />
       </FadeInUpScope>
+      <CookieConsent lang={lang} />
     </>
   );
 }

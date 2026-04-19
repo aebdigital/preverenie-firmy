@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { PageHero } from "@/components/page-hero";
+import { CrossSellCard } from "@/components/cross-sell-card";
 import { CtaRow, FeatureList } from "@/components/site-primitives";
 import { getDictionary } from "@/get-dictionary";
 import { i18n, type Locale } from "@/i18n-config";
@@ -60,37 +62,46 @@ export default async function FormationPage({
       </PageHero>
 
       <section className="mx-auto max-w-7xl space-y-10 px-5 py-16 sm:px-6 lg:px-8">
-        <article className="space-y-6 rounded-[2rem] border border-black/8 bg-neutral-50/70 p-6 sm:p-8">
-          <div className="space-y-3">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-              {t.foundingLabel}
-            </p>
-            <h2 className="text-3xl font-semibold text-black sm:text-4xl">
-              {t.foundingHeading}
+        <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div className="overflow-hidden rounded-[2rem] border border-black/8">
+            <Image
+              src="/images/formation.jpg"
+              alt={t.servicesLabel}
+              width={1200}
+              height={900}
+              className="aspect-[4/3] w-full object-cover"
+            />
+          </div>
+          <div className="space-y-6">
+            <h2 className="font-display text-3xl text-black sm:text-4xl">
+              {t.servicesLabel}
             </h2>
-            <p className="text-base leading-8 text-black/75">{t.foundingIntro}</p>
+            <FeatureList items={t.services} />
+            <ul className="ml-6 space-y-2 text-sm leading-7 text-black/70 sm:text-[15px]">
+              {t.changesSubItems.map((item) => (
+                <li key={item} className="list-disc">
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
-          <div className="rounded-[1.5rem] border border-black/8 bg-white p-6">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-              {t.foundingItemsLabel}
-            </p>
-            <FeatureList className="mt-4" items={t.foundingItems} />
-          </div>
+        </div>
+
+        <article className="space-y-6 rounded-[2rem] border border-black/8 bg-neutral-50/70 p-6 sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+            {t.benefitsLabel}
+          </p>
+          <p className="text-base leading-8 text-black/75">{t.whyText}</p>
+          <FeatureList items={t.benefits} />
         </article>
 
-        <article className="space-y-6 rounded-[2rem] border border-black/8 bg-white p-6 sm:p-8">
-          <div className="space-y-3">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-              {t.changesLabel}
-            </p>
-            <h2 className="text-3xl font-semibold text-black sm:text-4xl">
-              {t.changesHeading}
-            </h2>
-            <p className="text-base leading-8 text-black/75">{t.changesIntro}</p>
-          </div>
-          <FeatureList items={t.changesItems} />
-          <CtaRow primaryHref={contactHref} primaryLabel={dict.cta.primary} />
+        <article className="space-y-4 rounded-[2rem] border border-black/8 bg-white p-6 sm:p-8">
+          <p className="text-base leading-8 text-black/75">{t.closing1}</p>
+          <p className="text-base leading-8 text-black/75">{t.closing2}</p>
+          <CtaRow primaryHref={contactHref} primaryLabel={dict.cta.subsection} />
         </article>
+
+        <CrossSellCard pageKey="formation" locale={locale} dictionary={dict} />
       </section>
     </>
   );

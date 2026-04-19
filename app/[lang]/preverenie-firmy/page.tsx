@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PageHero } from "@/components/page-hero";
+import { CrossSellCard } from "@/components/cross-sell-card";
 import { CtaRow, FeatureList } from "@/components/site-primitives";
 import { getDictionary } from "@/get-dictionary";
 import { i18n, type Locale } from "@/i18n-config";
@@ -236,7 +237,7 @@ export default async function AuditPage({
             </div>
           </div>
 
-          <CtaRow primaryHref={contactHref} primaryLabel={dict.cta.primary} />
+          <CtaRow primaryHref={contactHref} primaryLabel={dict.cta.subsection} />
         </article>
 
         <article
@@ -280,7 +281,7 @@ export default async function AuditPage({
 
           <p className="text-base leading-8 text-black/75">{t.compliance.outro}</p>
 
-          <CtaRow primaryHref={contactHref} primaryLabel={dict.cta.primary} />
+          <CtaRow primaryHref={contactHref} primaryLabel={dict.cta.subsection} />
         </article>
 
         <article
@@ -291,7 +292,10 @@ export default async function AuditPage({
             <h2 className="text-3xl font-semibold text-black sm:text-4xl">
               {t.optimization.heading}
             </h2>
-            <h3 className="text-2xl font-semibold text-black sm:text-3xl">
+            <p className="text-base italic leading-8 text-black/60">
+              {t.optimization.preamble}
+            </p>
+            <h3 className="text-lg font-semibold text-black sm:text-xl">
               {t.optimization.subheading}
             </h3>
             <p className="text-base leading-8 text-black/75">{t.optimization.intro}</p>
@@ -329,8 +333,10 @@ export default async function AuditPage({
 
           <p className="text-base leading-8 text-black/75">{t.optimization.outro}</p>
 
-          <CtaRow primaryHref={contactHref} primaryLabel={dict.cta.primary} />
+          <CtaRow primaryHref={contactHref} primaryLabel={dict.cta.subsection} />
         </article>
+
+        <CrossSellCard pageKey="audit" locale={locale} dictionary={dict} />
       </section>
     </>
   );

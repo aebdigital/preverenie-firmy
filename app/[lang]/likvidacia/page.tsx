@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { PageHero } from "@/components/page-hero";
+import { CrossSellCard } from "@/components/cross-sell-card";
 import { CtaRow, FeatureList } from "@/components/site-primitives";
 import { getDictionary } from "@/get-dictionary";
 import { i18n, type Locale } from "@/i18n-config";
@@ -61,25 +63,37 @@ export default async function LiquidationPage({
 
       <section className="mx-auto max-w-7xl space-y-10 px-5 py-16 sm:px-6 lg:px-8">
         <article className="space-y-6 rounded-[2rem] border border-black/8 bg-neutral-50/70 p-6 sm:p-8">
-          <div className="space-y-3">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-              {t.processLabel}
-            </p>
-            <h2 className="text-3xl font-semibold text-black sm:text-4xl">
-              {t.processHeading}
-            </h2>
-            <p className="text-base leading-8 text-black/75">{t.processIntro}</p>
-          </div>
-          <FeatureList items={t.processItems} />
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+            {t.highlightsLabel}
+          </p>
+          <FeatureList items={t.highlights} />
         </article>
 
-        <article className="space-y-6 rounded-[2rem] border border-black/8 bg-white p-6 sm:p-8">
+        <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div className="space-y-4">
+            <p className="text-base leading-8 text-black/75">{t.paragraph1}</p>
+            <p className="text-base leading-8 text-black/75">{t.paragraph2}</p>
+          </div>
+          <div className="overflow-hidden rounded-[2rem] border border-black/8">
+            <Image
+              src="/images/liquidation.jpg"
+              alt={t.heroTitle}
+              width={1200}
+              height={900}
+              className="aspect-[4/3] w-full object-cover"
+            />
+          </div>
+        </div>
+
+        <article className="space-y-6 rounded-[2rem] border border-black/8 bg-neutral-50/70 p-6 sm:p-8">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-            {t.assistanceLabel}
+            {t.servicesLabel}
           </p>
-          <FeatureList items={t.assistanceItems} />
-          <CtaRow primaryHref={contactHref} primaryLabel={dict.cta.primary} />
+          <FeatureList items={t.services} />
+          <CtaRow primaryHref={contactHref} primaryLabel={dict.cta.subsection} />
         </article>
+
+        <CrossSellCard pageKey="liquidation" locale={locale} dictionary={dict} />
       </section>
     </>
   );

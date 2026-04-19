@@ -18,7 +18,8 @@
     }
   },
   "cta": {
-    "primary": "Book a meeting"
+    "primary": "Book a meeting",
+    "subsection": "Book a meeting / Request a quote"
   },
   "footer": {
     "tagline": "Company audit, compliance and process optimization supervised by a law firm.",
@@ -64,7 +65,7 @@
       "auditorChecks": [
         "your accountant followed accounting procedures when recording documents",
         "your financial statements give a true and fair view",
-        "in other words, whether your numbers match the documents and are recorded according to the law"
+        "in other words, whether your numbers match the documents and are recorded according to the law...."
       ],
       "doesNotMeanIntro": "... but this does not mean that:",
       "doesNotMean": [
@@ -199,102 +200,123 @@
         "Higher substitutability: Clearly defined processes mean one person leaving will not jeopardize an entire department.",
         "Happier employees: Clear responsibilities reduce stress and frustration caused by disorder."
       ],
-      "outro": "Feel free to contact us for more information on this topic."
+      "outro": "Feel free to contact us for more information on this topic.",
+      "preamble": "This segment is the most attractive for clients, because it directly promises them savings of money and time."
     }
   },
   "formation": {
-    "seoTitle": "Company formation and changes",
-    "seoDescription": "Comprehensive company formation and changes from the initial concept through incorporation to subsequent corporate changes.",
-    "heroTitle": "Company formation and changes",
-    "heroDescription": "From an idea to a functioning company. We deliver a legally, tax and process-ready entity that is ready to grow with you.",
-    "foundingLabel": "Company formation",
-    "foundingHeading": "Complete company setup from day one",
-    "foundingIntro": "We prepare not only the founding documents but also the overall architecture of the company — from the ownership structure and corporate purpose to related contracts.",
-    "foundingItemsLabel": "What our service includes",
-    "foundingItems": [
-      "Analysis of the business plan and recommendation of a suitable legal form",
-      "Drafting of founding documents (articles of association, statutes, deed of incorporation)",
-      "Arrangement of owner consents for the registered seat and notification duties",
-      "Registration in the Commercial Register and with tax authorities",
-      "Preparation of statutory and governance documents (rules of procedure, organizational chart)",
-      "Consultation on the accounting and tax strategy at the start of the business"
+    "seoTitle": "Company formation & changes",
+    "seoDescription": "Company formation, non-profit organizations and civic associations. Complete service delivered by LegisPro law firm.",
+    "heroTitle": "Company formation & changes",
+    "heroDescription": "Full-service incorporation and corporate changes – legal, tax and compliance aligned from day one.",
+    "whyLabel": "Why start with us?",
+    "whyText": "Unlike typical incorporation services, we look at your new entity through the eyes of lawyers and compliance specialists. From the very beginning we set up your core processes so that you operate in line with the law and avoid future risks from day one.",
+    "servicesLabel": "Our services",
+    "services": [
+      "Formation of a limited liability company (S.R.O.)",
+      "Formation of a joint-stock company (A.S.)",
+      "Registration of the shareholder list with the Central Securities Depository",
+      "Formation of civic associations and non-profit organizations",
+      "Formation of cooperatives",
+      "Changes in existing structures, such as:"
     ],
-    "changesLabel": "Corporate changes",
-    "changesHeading": "Changes that do not slow your business down",
-    "changesIntro": "When a change happens in the company, speed and accuracy are key. We prepare all necessary documents, arrange notarial acts and handle registration with the Commercial Register.",
-    "changesItems": [
-      "Change of business name, registered seat or business activities",
-      "Transfer of ownership interests and change of partners",
-      "Changes in statutory bodies and in the way the company is represented",
-      "Increase or decrease of registered capital",
-      "Setup of control mechanisms and partner rights",
-      "Update of internal policies and contractual documentation"
-    ]
+    "changesSubItems": [
+      "transfer of business share",
+      "change of managing director, ultimate beneficial owner, registered office, business activities, etc."
+    ],
+    "benefitsLabel": "Benefits of working with us",
+    "benefits": [
+      "Remotely, a personal visit is not required",
+      "Full service including obtaining the trade license",
+      "Express document preparation",
+      "Advisory included in the price, especially tailoring the right business form",
+      "No need to deposit registered capital to a bank account",
+      "All documents prepared by our law firm LegisPro, s.r.o."
+    ],
+    "closing1": "Documents are prepared not only to comply with legal regulations, but above all to protect your interests.",
+    "closing2": "All documents are prepared and the entire process is covered by our law firm."
   },
   "liquidation": {
-    "seoTitle": "Liquidation of companies and non-profit organizations",
-    "seoDescription": "Controlled liquidation of companies and non-profit organizations. We prepare you for terminating the entity without unnecessary risk.",
+    "seoTitle": "Liquidation of companies and non-profits",
+    "seoDescription": "Complete liquidation of companies, non-profit organizations and civic associations. Tax optimization and debt recovery supervised by a law firm.",
     "heroTitle": "Liquidation of companies and non-profits",
-    "heroDescription": "Terminate the entity in a controlled way. We prepare the entire liquidation process and set the conditions so that you have peace of mind both legally and from a tax perspective.",
-    "processLabel": "Liquidation process",
-    "processHeading": "From the decision to dissolve to removal from the register",
-    "processIntro": "Liquidating a company or non-profit is a process with multiple milestones that affect the liability of directors and partners. We prepare and document every step.",
-    "processItems": [
-      "Analysis of the entity's assets and liabilities",
-      "Partners' resolution to dissolve and enter liquidation",
-      "Appointment of the liquidator and notification to the Commercial Register",
-      "Notices to creditors and the tax office, publications in the Commercial Gazette",
-      "Settlement of receivables and liabilities, sale of assets and termination of contracts",
-      "Preparation of interim and final financial statements including the tax return",
-      "Approval of the liquidator's final report and distribution of the liquidation balance",
-      "Application for removal from the Commercial Register and tax office records"
+    "heroDescription": "We take over the entire liquidation process – fast, legally compliant, with maximum protection for statutory bodies and partners.",
+    "highlightsLabel": "What we provide for you",
+    "highlights": [
+      "We take over the entire process",
+      "Express liquidation of companies, non-profits and civic associations",
+      "Tax optimization",
+      "Debt recovery"
     ],
-    "assistanceLabel": "How we help you",
-    "assistanceItems": [
-      "Full management of the liquidation from decision to removal",
-      "Representation before public authorities and creditors",
-      "Tax and accounting advisory throughout the liquidation",
-      "Protection of directors from personal liability and proper documentation"
+    "paragraph1": "Liquidating a company does not have to be a nightmare. Whether it is fulfilling a business objective or a strategic decision to end operations, we ensure the entire process runs in compliance with legislation. We take over communication with authorities and the tax administrator and arrange proper removal of the company from the commercial register. You gain the certainty that only properly closed chapters remain in your past.",
+    "paragraph2": "Unprofessional closure of a company can create risks that will catch up with you years later. Our liquidation service focuses on maximum protection of statutory bodies and partners. We thoroughly review the status of liabilities, prepare the required documentation and guide you through the process – from appointing the liquidator to the final distribution of the liquidation balance, including tax optimization. Don't risk penalties – rely on expertise.",
+    "servicesLabel": "Our service mainly includes:",
+    "services": [
+      "Assessment whether you have the obligation to file for bankruptcy",
+      "Preparation of resolutions, registration in the relevant register and removal from it, fulfilment of notification duties,",
+      "Communication with institutions: Tax Office, insurance companies etc.",
+      "Preparation and optimization of the company before the actual deletion",
+      "Professional debt recovery",
+      "Accounting and tax services: preparation of extraordinary financial statements and tax returns.",
+      "Final termination of the entity's existence."
     ]
   },
   "mergers": {
     "seoTitle": "Mergers and transformations of companies",
-    "seoDescription": "Mergers and transformations of companies in line with Slovak and European legislation – from strategic planning to registration.",
+    "seoDescription": "Mergers, divisions, spin-offs and changes of legal form of companies supervised by LegisPro law firm.",
     "heroTitle": "Mergers and transformations of companies",
-    "heroDescription": "Strategic decisions require clean legal and tax execution. We prepare mergers, spin-offs and changes of legal form end-to-end.",
-    "whyLabel": "When to consider a transformation or merger",
-    "whyItems": [
-      "Consolidation of multiple companies within one group",
-      "Separating risky or unprofitable activities into a standalone entity",
-      "Acquisition or sale of part of the business",
-      "Change of legal form (e.g. from LLC to joint-stock company)",
-      "Cross-border mergers within the EU"
+    "heroDescription": "End-to-end preparation of mergers, divisions and changes of legal form under the latest legislation.",
+    "intro": "Do you own several companies with the same scope of business, are you growing, optimizing your structure or preparing your company for sale? Structural changes in a corporate group are a complex operation that requires precise legal, tax and accounting planning. We are here to safely guide you through the entire transformation process under the latest legislation.",
+    "typesLabel": "Transformations we handle",
+    "types": [
+      {
+        "title": "Mergers",
+        "description": "Combining two or more companies into a single strong entity with the aim of achieving tax optimization or reducing costs."
+      },
+      {
+        "title": "Divisions and spin-offs",
+        "description": "Separating a part of the business into a new company – ideal for diversifying risks or preparing for an investor."
+      },
+      {
+        "title": "Changes of legal form"
+      }
     ],
-    "processLabel": "What the cooperation looks like",
-    "processHeading": "We prepare the transaction end-to-end and in one logic",
-    "processItems": [
-      "Analysis of the starting structure and goal of the transaction",
-      "Proposal of the transformation or merger including tax and accounting impacts",
-      "Due diligence of the companies involved",
-      "Preparation of transformation or merger projects and all related documents",
-      "Securing consents and approvals (general meetings, supervisory bodies)",
-      "Coordination with auditors, notaries and registration courts",
-      "Registration of the transformation or merger in the Commercial Register and subsequent integration"
-    ]
+    "servicesLabel": "The service includes:",
+    "services": [
+      "Preparation of the transformation project: the core document that must meet all statutory requirements",
+      "Audit and auditor's report: we arrange the mandatory independent review of the transformation project",
+      "Protection of creditors and partners: we structure the process so it runs smoothly and without legal challenges",
+      "Communication with the register: we ensure the project is filed with the collection of deeds and the final registration of the change",
+      "The entire process is handled by our law firm LegisPro, s.r.o."
+    ],
+    "closing": "Because we also offer Company cash-flow review and Process optimization, we are not just \"paper processors\". Before the transformation we analyze the financial impact, and after it we help you set up processes in the new structure so it is effective from day one."
   },
   "contact": {
     "seoTitle": "About & contact",
     "seoDescription": "LegisPro, s.r.o. connects finance, compliance and law into practical solutions. Get in touch and let's plan an initial consultation.",
-    "heroTitle": "About & contact",
-    "heroDescription": "LegisPro, s.r.o. is a law firm focused on connecting law, finance and processes. We help owners, directors and investors make informed decisions.",
-    "missionLabel": "Our mission",
-    "missionText": "We help clients see their company as a whole. We combine legal, tax and process expertise into a single output that is understandable and actionable.",
-    "valuesLabel": "How we approach cooperation",
-    "values": [
-      "Discretion and clear communication throughout the cooperation",
-      "A blend of legal, economic and process perspectives",
-      "Focus on practical usability of outputs and their defensibility",
-      "Long-term care for clients, not one-off projects"
+    "heroTitle": "About us",
+    "heroDescription": "",
+    "introLabel": "LegisPro, s.r.o., law firm",
+    "introText1": "We are your partner for integrity and growth. We strive to bring transparency where uncertainty reigns. We believe that a healthy company is not only one that generates profit, but one with clean cash flows and effective processes. We combine expertise in finance, legislation and process management to give you the grounds for your most important decisions.",
+    "introText2": "If you decide to change your form of business or wind it down, we will professionally guide you through the entire process.",
+    "pillarsLabel": "Our pillars",
+    "pillars": [
+      {
+        "title": "Discretion",
+        "description": "Your data is absolutely safe with us"
+      },
+      {
+        "title": "Objectivity",
+        "description": "We don't sugar-coat reality, we state the facts"
+      },
+      {
+        "title": "Practicality",
+        "description": "We don't just deliver reports – we bring solutions that work in practice"
+      },
+      {
+        "title": "Expertise",
+        "description": "All services are provided by our law firm"
+      }
     ],
     "contactLabel": "Contact",
     "formTitle": "Book a meeting",
@@ -309,5 +331,45 @@
       "success": "Thank you, we will get back to you as soon as possible.",
       "error": "The form could not be sent. Please try again."
     }
+  },
+  "crossSell": {
+    "allServices": "See the full list of services at legispro.sk",
+    "services": {
+      "criminal": "Criminal law",
+      "litigation": "Litigation",
+      "commercial": "Commercial law",
+      "financial": "Tax & financial law",
+      "dueDiligence": "Due diligence",
+      "gdpr": "GDPR",
+      "ecommerce": "e-Commerce",
+      "startups": "Start-up & Greenfield projects"
+    },
+    "pages": {
+      "audit": {
+        "heading": "Did the audit uncover a crime or dispute?",
+        "description": "When audit findings require court or criminal proceedings, our sister law firm LegisPro takes over your representation seamlessly."
+      },
+      "formation": {
+        "heading": "Need legal support after incorporation?",
+        "description": "Contracts, GDPR, e-shops, start-up and greenfield projects — all covered by LegisPro, s.r.o. as a full-service law firm."
+      },
+      "liquidation": {
+        "heading": "Debt collection and litigation",
+        "description": "Liquidation often requires resolving unpaid receivables or commercial disputes first. Our sister firm LegisPro handles these cases."
+      },
+      "mergers": {
+        "heading": "Due diligence and tax review",
+        "description": "Before any acquisition or conversion we recommend a deep legal and tax review. Both services are delivered by our sister firm LegisPro."
+      },
+      "contact": {
+        "heading": "Looking for broader legal services?",
+        "description": "Beyond company audits, LegisPro, s.r.o. offers the full range of legal services — from criminal and commercial law to GDPR and litigation."
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "Declaration on personal data protection and conditions for their processing",
+    "content": "<p><strong>issued by LegisPro law firm, s.r.o.</strong></p><h3>Controller Identification</h3><p>The controller of your personal data processing is the law firm LegisPro, s.r.o., Business ID: 56709901, with registered office at Sládkovičova 1, 949 01 Nitra, a company registered in the Commercial Register of the District Court of Nitra, Section Sro, File No. 64948/N (hereinafter also referred to as \"LegisPro\" or \"We\" in the appropriate grammatical form).</p><p>Regarding matters relating to the processing and protection of personal data, you may contact us at the address LegisPro, s.r.o., law firm, Sládkovičova 1, 949 01 Nitra or by email at dpo@legispro.sk.</p><p>This declaration informs you about the conditions and principles of protection of your personal data that we obtain from you through our interaction with you, specifically about how and what personal data we obtain from you, how we process this personal data, and what your rights are in connection with the processing of your personal data.</p><p>LegisPro as a controller takes the protection of your personal data very seriously. In protecting them, we proceed carefully according to applicable law, in particular according to Regulation (EU) 2016/679 of the European Parliament and of the Council on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (hereinafter \"the Regulation\"), Act No. 18/2018 Coll. on personal data protection and on amendments to certain acts, as well as Act No. 586/2003 Coll. on advocacy and on amendments to Act No. 455/1991 Coll. on trade licensing (Trade Licensing Act) as amended and other applicable legal regulations (hereinafter also \"the Advocacy Act\"). In addition to the aforementioned legal framework, we also proceed in the protection of your personal data according to the Code of Conduct for the Processing of Personal Data by Lawyers, which was adopted by the Slovak Bar Association and which is binding for every lawyer and law firm. The text of this code can be found on the website of the Slovak Bar Association here: <a href=\"https://www.sak.sk\" target=\"_blank\">https://www.sak.sk</a>.</p><h3>Why do we process your personal data?</h3><p>One of our main goals is to provide you – our clients – with quality legal services in the exercise of our profession. This requires close cooperation between us and you and a high degree of trust. We process your personal data to achieve this goal, so that we can provide you with comprehensive and unique services in the legal field, e.g., develop solutions for various situations, represent you in dispute resolution, contract negotiations, or help you in various legal cases. Within these processes, we must fulfill legal, contractual, or other obligations. Our effort is always and to the greatest possible extent to protect you and your interests.</p><h3>What does personal data actually mean?</h3><p>Your personal data is any information or characteristic based on which we know or can identify you. It does not matter whether it is direct or indirect identification. Identifying information can be a certain general identifier such as name, surname, date of birth, personal number, or online identifier. An identifying characteristic can be a certain physiological, genetic, but also psychological or cultural characteristic or trait that is typical for you. Personal data can also be information about your preferences, e.g., consumer or interest-related, relating to your person.</p><h3>How do we obtain your data?</h3><p>As an introduction to this section, we would like to inform you that according to the relevant provisions of Section 18 of the Advocacy Act, a lawyer (law firm):</p><ul><li>processes personal data of clients and other natural persons to the extent necessary for the purposes of practicing law and when processing personal data for purposes related to the provision of legal services always has the position of data controller according to Article 4 paragraph 7,</li><li>is authorized to obtain and process personal data necessary for the purposes of practicing law by copying, scanning, or otherwise recording official documents on an information medium without the consent of the data subject,</li><li>does not have the obligation to provide information about personal data processing, allow access or portability of personal data according to special regulations, if this could lead to a violation of the lawyer's obligation to maintain confidentiality according to the Advocacy Act (and in such a case we will not inform you about the processing of your personal data).</li></ul><h4>If you are our client</h4><p>If you are our client, we obtain your personal data primarily from you. The provision of your personal data is completely voluntary, however, in some cases it is necessary for us to provide you with legal services in accordance with the Advocacy Act as amended. In exceptional cases, failure to provide your personal data may result in refusal to provide legal services.</p><p>In some cases, we also obtain your personal data from sources other than you, for example from public authorities, from publicly available sources, or from other persons.</p><h4>How do we obtain your personal data if you are not our client?</h4><p>If you are not our client, we obtain your personal data mostly directly from our clients, from public sources, or from public authorities (e.g., if you are an opposing party in proceedings). In this case, we may obtain your personal data even against your will (based on legal authorization and obligation to practice law and provide legal services in accordance with the Advocacy Act).</p><p>We also obtain your personal data from your visits to our website www.legispro.sk. Collection of your personal data also occurs by filling out the contact form on our website in the scope of name, surname, email address, and personal data contained in the message.</p><h3>For what purposes do we process your personal data?</h3><p>We process your personal data primarily for the following purposes:</p><div class=\"gdpr-table\"><table><tr><th>Purpose</th><th>Legal Basis</th><th>Description</th></tr><tr><td>conducting selection procedures<br>concluding and fulfilling contracts for the provision of legal services with clients<br>concluding and fulfilling contracts with suppliers of goods and services<br>organizing webinars, seminars and training</td><td>fulfillment of contractual obligations under Article 6 para. (1) letter b) of the Regulation, including the performance of pre-contractual relations</td><td>For this purpose, we process your personal data if you have concluded a contract with us, or so that we can take measures before concluding a contract based on your requirements (pre-contractual relations). This will mainly concern a contract for the provision of legal services or a cooperation agreement.</td></tr><tr><td>processing of accounting documents<br>registration and handling of received and sent mail (including electronic mailbox)<br>maintaining records of sent and received mail<br>preparation of legal services offers at the client's request<br>representation of clients in proceedings before courts, public authorities and other entities<br>defense in criminal proceedings<br>providing legal advice to clients<br>preparation of legal opinions and analyses<br>drafting documents on legal acts<br>communication with clients and other natural persons regarding the practice of law or contractual relationship with the client<br>searching for evidence in favor of the client<br>establishing the identity of affected persons through witnesses, statements or other documentary evidence<br>authorization of contracts including searching for information about persons who could be harmed by the conclusion of the contract<br>performing conversion and guaranteed conversion<br>recording time, acts and advice provided to the client<br>maintaining the lawyer's file agenda, including administrative activities related to the provision of legal and other services<br>fulfillment of obligations in protection against money laundering (identification of suspicious operations)<br>handling complaints<br>handling exercised rights of data subjects</td><td>fulfillment of legal obligations under Article 6 para. (1) letter c) of the Regulation</td><td>In certain cases, we are obliged to process your personal data also when fulfilling our legal obligations. Such obligations arise primarily from accounting regulations, tax regulations and from the Advocacy Act and related regulations.</td></tr><tr><td>record keeping of contracts, clients and business partners. The legitimate interest is the record keeping of contracts for the purpose of maintaining an overview of concluded contracts, for accounting needs, ensuring internal control activities and for enforcing claims arising from contracts.<br><br>conducting other business communication (except communication with clients regarding the practice of law or fulfillment of contractual relationship). The legitimate interest is conducting business communication with our suppliers and clients in order to ensure the fulfillment of our contractual obligations, proper performance of our activities or informing affected persons acting on behalf of our business partners.<br><br>record keeping of exercised rights of data subjects. The legitimate interest is recording exercised rights of data subjects for the purpose of demonstrating compliance with obligations arising from legal regulations.<br><br>Sending advertising and marketing announcements to clients and former clients in cases where relevant legal regulations allow this based on legitimate interest. The legitimate interest is the interest in making our law firm and our work more visible.</td><td>legitimate interest under Article 6 para. (1) letter f) of the Regulation, which is specified separately for each purpose</td><td>We also process your personal data for the purposes of our legitimate interests, exclusively in cases where processing is necessary to pursue our legitimate interests or the legitimate interests of a third party. However, the condition is that your interests or your fundamental rights and freedoms do not override these interests.</td></tr><tr><td>market research and marketing<br>statistical measurement of website traffic and online marketing</td><td>consent under Article 6 para. (1) letter a) of the Regulation granted by the data subject, which the data subject is entitled to withdraw at any time</td><td>In these cases, we process your personal data based on your freely given consent.</td></tr></table></div><h3>To whom do we disclose your personal data?</h3><p>We may provide your personal data for the achievement of the above-mentioned purposes to the minimally necessary extent also to our processors, who are external entities processing your personal data on our behalf. We ensure that processors protect your personal data through the adoption of appropriate technical and security measures against unauthorized use, accidental loss, deletion or damage. Processors include companies providing accounting, payroll and HR services, companies providing advertising, marketing services and managing the website and social media, companies providing hosting services.</p><p>In addition to the aforementioned companies, we may also disclose your personal data to our cooperating lawyers, notaries, experts, economic advisors or public administration authorities.</p><p>In some cases, the recipient of your personal data is also Google, LLC, which is the parent company of the European provider of online services using cookies that our website stores on your device based on your consent, and parent companies of European social network operators – Meta, Inc., which is the parent company of the European operator of the Facebook social network, and LinkedIn Corporation, which is the parent company of the European operator of the LinkedIn social network, if you contact us through social networks.</p><p>We never trade with your personal data and carefully consider each disclosure, always in accordance with the law. At the same time, if your personal data is transferred, it is carefully secured through appropriate security measures in accordance with relevant safeguards, especially through the use of standard contractual clauses.</p><h3>What categories of personal data do we process and to what extent?</h3><p>We process your personal data to the extent that is minimally necessary for fulfilling our obligations or pursuing our legitimate interests towards you and always within the given purpose. We do not require personal data from you that is not necessary to achieve the given purpose. We process your personal data to the extent of: name, surname, permanent residence address, date of birth, email address and telephone number. If the nature of the matter requires it to achieve a specific purpose, we may also process data on the type and number of your identity document, your personal number and other personal data.</p><p>In certain specific cases, we may also process special categories of personal data in the practice of law, e.g., information about health status or other personal status, always only to a minimal extent and for the given purpose.</p><p>In the practice of law, we have legal authorization to obtain and process your personal data necessary for the purposes of practicing law by copying, scanning or otherwise recording official documents on an information medium, even without your consent.</p><h3>How long do we retain your personal data?</h3><p>We retain your personal data in a form that allows your identification no later than as long as it is necessary for the purpose for which the personal data is processed. After achieving this purpose, we immediately delete your data. We may retain personal data for longer if it is to be processed exclusively for archival purposes, for scientific purposes, for historical research purposes or for statistical purposes to fulfill legal obligations. Throughout the entire retention period of your personal data, we take care of their protection.</p><p>In retaining your personal data, we proceed in accordance with Resolution of the Presidium of the Slovak Bar Association No. 29/11/2011, which stipulates the recommended retention period for the law firm's case files and related documents, and thus also for the processed personal data, for example:</p><ul><li>the lawyer shall store the incoming and outgoing mail register for ten years from the date of receipt or dispatch of the last item recorded in the register after it has been filled;</li><li>the lawyer shall archive the inventory list for ten years from the date of its compilation;</li><li>if the lawyer keeps a list of clients and a client file protocol electronically, at the end of the calendar year, they shall create a printed form for the calendar year and store it in the office indefinitely;</li><li>the retention period for a client file is 10 years and runs from the day when all conditions for placing the file in the archive are met.</li></ul><p>In accordance with the same resolution, we cannot delete a client file at all if it contains original documents that you have handed over to us. We also cannot shred and/or otherwise dispose of the following documents:</p><ul><li>a client file containing original documents handed over to the lawyer by the client;</li><li>protocols of client files and lists of client files;</li><li>a client file or part thereof which the lawyer is obliged to hand over to the state archive;</li></ul><p>It is not possible to shred a client file if any proceedings are ongoing before a court, state administration body, law enforcement authorities, or the Slovak Bar Association, which are substantively related to the content of the client file, or the subject of which was the conduct or omission of the lawyer in providing legal assistance to the client in the matter. In addition, we process personal data for a period determined based on various criteria as follows:</p><ul><li>for the period stipulated by generally binding legal regulations, in cases where we process your personal data in fulfilling our legal obligations;</li><li>for the duration of the contractual relationship, or the duration of pre-contractual measures, in cases where we process your personal data based on the fulfillment of a contract or pre-contractual measures;</li><li>for the duration of our legitimate interest, in cases where the processing of personal data is carried out for the purposes of our legitimate interests or the legitimate interests of a third party;</li><li>for the duration of the granted consent to the processing of your personal data, in cases where we process your personal data based on the consent of the data subject.</li></ul><p>As a data subject, you can contact us at any time with a request to specify the exact processing period for your personal data.</p><h3>Do we use automated individual decision-making and profiling when processing your personal data?</h3><p>When processing your personal data, we do not use any automated individual decision-making or profiling that would involve processing your personal data by using personal data to evaluate certain of your personal characteristics or traits.</p><h3>To which countries do we transfer your personal data?</h3><p>We may also transfer your personal data to countries outside the European Economic Area for the purpose of our presentation and advertising, for which we use the services of Google, LLC, Meta, Inc. and LinkedIn Corporation.</p><h3>What are your rights?</h3><p>Your legal rights and, conversely, our obligations are:</p><ul><li><strong>Right to access information</strong>: upon your request, we will issue a confirmation of whether we are processing your personal data. If we are processing your personal data, you have the right to access it, and we will provide it to you in the form you request. You have the right to obtain information about the purpose and legal basis of the processing of your personal data, as well as about the category, recipients, and retention period thereof.</li><li><strong>Right to rectification</strong>: We will rectify your personal data or supplement your incomplete personal data without undue delay after we become aware of their inaccuracy or incompleteness. We always keep your personal data up-to-date and accurate.</li><li><strong>Right to erasure, or \"right to be forgotten\"</strong>: Upon your request, or to fulfill legal obligations, we will erase your personal data without undue delay. This may include cases where the processing of your personal data is contrary to the legal principles of its processing, or the erasure of personal data is necessary for the purpose of fulfilling legal obligations, or an international agreement to which the Slovak Republic is bound. In certain legal cases, we cannot proceed with the erasure of your personal data immediately, as we must respect the minimum legal retention periods, or we cannot erase your personal data at all, see the section of this document regarding retention periods.</li><li><strong>Right to restriction of processing</strong>: If you find that your personal data processed by us is incorrect, we will restrict its processing upon your initiative. We will also restrict processing if such processing is unlawful, you object to the erasure of your personal data and request instead the restriction of its use. If we no longer need your personal data, but it is necessary for you to assert your legal claims, we will restrict its processing upon your initiative. If you exercise the right to object, we will also process your personal data only to a limited extent. In these cases, we will only store your personal data or process it only with your consent, or for the demonstration, exercise, or defense of legal claims, or for the protection of the rights of other persons, or for reasons of important public interest.</li><li><strong>Right to data portability</strong>: if we process your personal data based on your granted consent, or its processing is necessary for the performance of a contract to which you are bound, we will provide your personal data to you upon your request in a commonly used, structured format. If technically possible, you have the right to transfer your recorded personal data to another controller.</li><li><strong>Right to object</strong>: if we process your personal data based on a legitimate interest, you have the right to object to such processing. If you object to processing for direct marketing purposes, we will no longer process your data.</li><li><strong>Right to withdraw consent</strong>: You may withdraw your consent to the processing of your personal data, which you have granted to us, at any time. Upon receipt of the withdrawal of consent, we will no longer process your personal data.</li><li><strong>Right to lodge a complaint or submission with the Office for Personal Data Protection</strong>: if you suspect that your personal data has been handled unlawfully or your personal data is at risk, you may contact the supervisory authority, which is the Office for Personal Data Protection of the Slovak Republic, with its registered office at Hraničná 12, 820 07 Bratislava 27.</li></ul><p>You can exercise your rights by sending a written request to the address of our company's registered office or via the email address provided below. We will assess and process your request within one month of its receipt. In specific cases, e.g., a large number of requests, or their substantive complexity, we are entitled to extend this period by a maximum of two months. We will inform you in writing about the extension of the period.</p><h3>We protect your privacy</h3><p>It is important to us that your personal data is secure. For its protection, we use various antivirus programs and a multi-level firewall. Our websites use secure https:// protocol. On the other hand, we do not underestimate the human factor. Our employees or intermediaries who come into contact with your personal data are instructed on the principles of processing your data, have an obligation to maintain confidentiality, and are regularly trained. Electronic documents containing your personal data are protected by strong passwords for the necessary period of their retention. If it is necessary for us to retain some documents in their physical form, these are stored in secured storage areas, without the possibility of access by third parties.</p><h3>Changes to the terms of personal data protection and processing</h3><p>These terms become valid and effective on January 01, 2025.</p><p>The terms of personal data protection may change dynamically, and we are prepared for these changes. We always strive to provide you with up-to-date information in this area, as the area of protection of your personal data is important to us. Therefore, we reserve the right to update these terms to always be in accordance with current legal regulations. In case of their update, we will inform you of this fact through our website.</p><h3>Contact us</h3><p>In case of any questions regarding the protection and processing of personal data, you can contact us at the contact addresses provided above.</p>"
   }
 }

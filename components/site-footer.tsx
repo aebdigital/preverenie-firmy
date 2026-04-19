@@ -1,8 +1,10 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/i18n-config";
 import type { Dictionary } from "@/get-dictionary";
 import { getLocalizedPath } from "@/pathnames";
 import { contactDetails } from "@/lib/site-content";
+import { CookiesSettingsButton } from "@/components/cookies-settings-button";
 
 const NAV_ITEMS: { key: keyof Dictionary["nav"]["items"]; internal: string }[] = [
   { key: "audit", internal: "/preverenie-firmy" },
@@ -24,12 +26,23 @@ export function SiteFooter({
       <div className="mx-auto max-w-7xl px-5 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
           <div className="space-y-5">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/50">
-              prevereniefirmy.sk
-            </p>
-            <h2 className="max-w-lg text-4xl font-semibold leading-tight text-white sm:text-5xl">
-              {contactDetails.company}
-            </h2>
+            <div className="flex items-center gap-3">
+              <Image
+                src="/logo.png"
+                alt="LegisPro"
+                width={56}
+                height={56}
+                className="h-12 w-12 object-contain sm:h-14 sm:w-14"
+              />
+              <div className="min-w-0">
+                <p className="font-display text-2xl font-semibold leading-none text-white sm:text-[1.8rem]">
+                  {contactDetails.company}
+                </p>
+                <p className="text-[0.75rem] font-normal uppercase tracking-[0.08em] text-white/60">
+                  {dictionary.nav.subtitle}
+                </p>
+              </div>
+            </div>
             <p className="max-w-xl text-base leading-8 text-white/72">
               {dictionary.footer.tagline}
             </p>
@@ -81,15 +94,18 @@ export function SiteFooter({
 
         <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-sm text-white/55">
-            © {new Date().getFullYear()} prevereniefirmy.sk. {dictionary.footer.rights}
+            © {new Date().getFullYear()} {contactDetails.company}. {dictionary.footer.rights}
             {" | "}
-            <a href="#" className="transition hover:text-white">
+            <Link
+              href={getLocalizedPath("/ochrana-osobnych-udajov", lang)}
+              className="transition hover:text-white"
+            >
               {dictionary.footer.privacyPolicy}
-            </a>
+            </Link>
             {" | "}
-            <a href="#" className="transition hover:text-white">
+            <CookiesSettingsButton className="transition hover:text-white">
               {dictionary.footer.cookies}
-            </a>
+            </CookiesSettingsButton>
           </p>
           <a
             href="https://aebdigital.sk"

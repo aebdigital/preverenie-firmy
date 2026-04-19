@@ -11,15 +11,14 @@ export function PageHero({
 }: {
   badge?: string;
   title: string;
-  description: string;
+  description?: string;
   imageSrc: string;
   imageAlt: string;
   titleClassName?: string;
   children?: ReactNode;
 }) {
   return (
-    <section className="relative overflow-hidden border-b border-black/6">
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-black/10 to-transparent" />
+    <section className="relative overflow-hidden">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-8 lg:py-20">
         <div className="space-y-6">
           <div className="space-y-4">
@@ -30,9 +29,11 @@ export function PageHero({
             >
               {title}
             </h1>
-            <p className="max-w-2xl text-base leading-8 text-black/72 sm:text-lg">
-              {description}
-            </p>
+            {description ? (
+              <p className="max-w-2xl text-base leading-8 text-black/72 sm:text-lg">
+                {description}
+              </p>
+            ) : null}
           </div>
           {children}
         </div>
