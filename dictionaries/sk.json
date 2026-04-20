@@ -2,7 +2,7 @@
   "meta": {
     "locale": "sk-SK",
     "htmlLang": "sk",
-    "siteName": "prevereniefirmy.sk",
+    "siteName": "LegisPro, s.r.o.",
     "siteTitle": "Preverenie firmy | LegisPro, s.r.o.",
     "description": "Preverenie finančných tokov firmy, compliance, optimalizácia procesov a korporátne zmeny pod dohľadom advokátskej kancelárie LegisPro, s.r.o."
   },
@@ -122,11 +122,11 @@
           "name": "Balík GREEN FLAG SCAN",
           "description": "rýchly finančný prehľad firmy",
           "items": [
-            "analýzu účtovníctva za 12 mesiacov",
-            "analýzu TOP 20 dodávateľov a odberateľov",
-            "mapu toku peňazí",
-            "kontrolu spriaznených osôb",
-            "identifikáciu rizík",
+            "analýza účtovníctva za 12 mesiacov",
+            "analýza TOP 20 dodávateľov a odberateľov",
+            "mapa toku peňazí",
+            "kontrola spriaznených osôb",
+            "identifikácia rizík",
             "odhad spôsobenej škody"
           ]
         },
@@ -134,7 +134,7 @@
           "name": "Balík ORANGE FLAG SCAN",
           "description": "naviac oproti balíku GREEN FLAG SCAN",
           "items": [
-            "právnu kvalifikáciu",
+            "právna kvalifikácia",
             "návrh prostriedkov Vašej právnej ochrany"
           ]
         },
@@ -347,7 +347,7 @@
     "pages": {
       "audit": {
         "heading": "Preverenie odhalilo trestný čin alebo spor?",
-        "description": "Ak audit prinesie zistenia, ktoré je nutné riešiť súdnou alebo trestnou cestou, plynule prevezmeme Vaše zastupovanie v rámci sesterskej advokátskej kancelárie LegisPro."
+        "description": "Ak audit prinesie zistenia, ktoré je nutné riešiť súdnou alebo trestnoprávnou cestou, plynule prevezmeme Vaše zastupovanie v rámci našej advokátskej kancelárie LegisPro, s.r.o."
       },
       "formation": {
         "heading": "Potrebujete právny servis aj po založení?",
@@ -355,11 +355,11 @@
       },
       "liquidation": {
         "heading": "Vymáhanie pohľadávok a súdne spory",
-        "description": "Pred likvidáciou často treba vyriešiť nezaplatené pohľadávky alebo obchodné spory. Pre tieto oblasti využite našu sesterskú kanceláriu LegisPro."
+        "description": "Pred likvidáciou často treba vyriešiť nezaplatené pohľadávky alebo obchodné spory. Pre tieto oblasti využite našu advokátsku kanceláriu LegisPro, s.r.o."
       },
       "mergers": {
         "heading": "Due diligence a daňové posúdenie",
-        "description": "Pred akvizíciou alebo premenou odporúčame hĺbkovú právnu a daňovú analýzu. Obe služby poskytuje sesterská kancelária LegisPro."
+        "description": "Pred akvizíciou alebo premenou odporúčame hĺbkovú právnu a daňovú analýzu. Obe služby poskytuje naša advokátska kancelária LegisPro, s.r.o."
       },
       "contact": {
         "heading": "Hľadáte širší právny servis?",

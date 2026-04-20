@@ -63,7 +63,7 @@ export default async function FormationPage({
 
       <section className="mx-auto max-w-7xl space-y-10 px-5 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-          <div className="overflow-hidden rounded-[2rem] border border-black/8">
+          <div className="order-2 overflow-hidden rounded-[2rem] border border-black/8 lg:order-1">
             <Image
               src="/images/zakladanie-2.jpg"
               alt={t.servicesLabel}
@@ -72,7 +72,7 @@ export default async function FormationPage({
               className="aspect-[4/3] w-full object-cover"
             />
           </div>
-          <div className="space-y-6">
+          <div className="order-1 space-y-6 lg:order-2">
             <h2 className="font-display text-3xl text-black sm:text-4xl">
               {t.servicesLabel}
             </h2>

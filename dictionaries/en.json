@@ -2,7 +2,7 @@
   "meta": {
     "locale": "en-US",
     "htmlLang": "en",
-    "siteName": "prevereniefirmy.sk",
+    "siteName": "LegisPro, s.r.o.",
     "siteTitle": "Company Audit | LegisPro, s.r.o.",
     "description": "Company cash-flow audit, compliance, process optimization and corporate changes supervised by LegisPro law firm."
   },
@@ -11,7 +11,7 @@
     "contactCta": "Book a meeting",
     "items": {
       "audit": "Company audit",
-      "formation": "Company formation & changes",
+      "formation": "Company establishment & changes",
       "liquidation": "Liquidation",
       "mergers": "Mergers & transformations",
       "contact": "About & contact"
@@ -205,19 +205,19 @@
     }
   },
   "formation": {
-    "seoTitle": "Company formation & changes",
-    "seoDescription": "Company formation, non-profit organizations and civic associations. Complete service delivered by LegisPro law firm.",
-    "heroTitle": "Company formation & changes",
+    "seoTitle": "Company establishment & changes",
+    "seoDescription": "Company establishment, non-profit organizations and civic associations. Complete service delivered by LegisPro law firm.",
+    "heroTitle": "Company establishment & changes",
     "heroDescription": "Full-service incorporation and corporate changes – legal, tax and compliance aligned from day one.",
     "whyLabel": "Why start with us?",
     "whyText": "Unlike typical incorporation services, we look at your new entity through the eyes of lawyers and compliance specialists. From the very beginning we set up your core processes so that you operate in line with the law and avoid future risks from day one.",
     "servicesLabel": "Our services",
     "services": [
-      "Formation of a limited liability company (S.R.O.)",
-      "Formation of a joint-stock company (A.S.)",
+      "Establishment of a limited liability company (S.R.O.)",
+      "Establishment of a joint-stock company (A.S.)",
       "Registration of the shareholder list with the Central Securities Depository",
-      "Formation of civic associations and non-profit organizations",
-      "Formation of cooperatives",
+      "Establishment of civic associations and non-profit organizations",
+      "Establishment of cooperatives",
       "Changes in existing structures, such as:"
     ],
     "changesSubItems": [
@@ -347,7 +347,7 @@
     "pages": {
       "audit": {
         "heading": "Did the audit uncover a crime or dispute?",
-        "description": "When audit findings require court or criminal proceedings, our sister law firm LegisPro takes over your representation seamlessly."
+        "description": "When audit findings require court or criminal proceedings, we take over your representation seamlessly as LegisPro law firm."
       },
       "formation": {
         "heading": "Need legal support after incorporation?",
@@ -355,11 +355,11 @@
       },
       "liquidation": {
         "heading": "Debt collection and litigation",
-        "description": "Liquidation often requires resolving unpaid receivables or commercial disputes first. Our sister firm LegisPro handles these cases."
+        "description": "Liquidation often requires resolving unpaid receivables or commercial disputes first. As LegisPro law firm we handle these cases."
       },
       "mergers": {
         "heading": "Due diligence and tax review",
-        "description": "Before any acquisition or conversion we recommend a deep legal and tax review. Both services are delivered by our sister firm LegisPro."
+        "description": "Before any acquisition or conversion we recommend a deep legal and tax review. Both services are delivered by our LegisPro law firm."
       },
       "contact": {
         "heading": "Looking for broader legal services?",

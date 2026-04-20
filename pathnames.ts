@@ -8,7 +8,7 @@ export const pathnames: Record<string, Record<Locale, string>> = {
   },
   "/zakladanie-a-zmeny": {
     sk: "/zakladanie-a-zmeny",
-    en: "/company-formation"
+    en: "/company-establishment"
   },
   "/likvidacia": {
     sk: "/likvidacia",

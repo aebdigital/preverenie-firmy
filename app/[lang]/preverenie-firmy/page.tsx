@@ -306,8 +306,16 @@ export default async function AuditPage({
 
           <div className="grid gap-4 lg:grid-cols-2">
             <div className="rounded-[1.75rem] border border-blue-100 bg-blue-50 p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
-                {t.compliance.whistleblowingTipLabel}
+              <p className="flex items-start gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-black/45">
+                <Image
+                  src="/images/lightbulb.png"
+                  alt=""
+                  width={24}
+                  height={24}
+                  className="mt-[1px] h-6 w-6 shrink-0"
+                  aria-hidden="true"
+                />
+                <span>{t.compliance.whistleblowingTipLabel}</span>
               </p>
               <p className="mt-4 text-base leading-8 text-black/75">
                 {t.compliance.whistleblowingTip}
